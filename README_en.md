@@ -65,12 +65,28 @@ Go to [Releases](https://github.com/syfssb/CherryAgent/releases) and download th
 > For self-hosting the auth backend and landing page. The desktop client does not require Docker.
 
 ```bash
-git clone https://github.com/syfssb/CherryAgent.git && cd CherryAgent
-cp api-server/.env.example api-server/.env  # Fill in your config
-docker compose up -d && docker compose exec api npm run db:migrate
+# 1. Clone the repo
+git clone https://github.com/syfssb/CherryAgent.git
+cd CherryAgent
+
+# 2. Configure environment variables
+cp api-server/.env.example api-server/.env
+# Edit api-server/.env — at minimum set JWT_SECRET
+
+# 3. Start services
+docker compose up -d
+
+# 4. Initialize the database (first run only)
+docker compose exec api npm run db:migrate
 ```
 
-After startup: API backend at `http://localhost:3000`, landing page at `http://localhost:8080`.
+Services after startup:
+
+| Service | Address | Notes |
+|---------|---------|-------|
+| API backend | `http://localhost:3000` | Auth, billing, API proxy |
+| Landing page | `http://localhost:8080` | Download page (optional — comment out in docker-compose.yml if not needed) |
+| PostgreSQL | Internal | Not exposed externally, container-only |
 
 ---
 
