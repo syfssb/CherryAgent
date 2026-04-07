@@ -1,0 +1,569 @@
+@import "tailwindcss";
+@import "highlight.js/styles/github.css";
+
+@custom-variant dark (&:is(.theme-dark *));
+
+@theme {
+  /* Surface colors — Anthropic warm ivory palette */
+  --color-surface: #ffffff;
+  --color-surface-secondary: #f0eee6;
+  --color-surface-tertiary: #e8e6dc;
+  --color-surface-cream: #faf9f5;
+
+  /* Ink colors — Anthropic warm near-blacks */
+  --color-ink-900: #141413;
+  --color-ink-800: #1a1a18;
+  --color-ink-700: #3d3d3a;
+  --color-ink-600: #5e5d59;
+  --color-ink-500: #6b6a68;
+  --color-ink-400: #87867f;
+  --color-ink-300: #b0aea5;
+  --color-ink-200: #d1cfc5;
+  --color-ink-100: #e8e6dc;
+  --color-ink-50: #f0eee6;
+
+  /* Muted colors */
+  --color-muted: #87867f;
+  --color-muted-light: #b0aea5;
+
+  /* Accent colors — Anthropic product orange */
+  --color-accent: #ae5630;
+  --color-accent-hover: #c4633a;
+  --color-accent-light: #f5d0c5;
+  --color-accent-subtle: #fdf4f1;
+  --color-accent-cta: #c6613f;
+
+  /* User message bubble */
+  --color-user-bubble: #DDD9CE;
+
+  /* Status colors */
+  --color-error: #DC2626;
+  --color-error-light: #FEE2E2;
+  --color-success: #16A34A;
+  --color-success-light: #DCFCE7;
+  --color-info: #2563EB;
+  --color-info-light: #DBEAFE;
+
+  /* Background colors */
+  --color-bg-000: #ffffff;
+  --color-bg-100: #faf9f5;
+  --color-bg-200: #f0eee6;
+  --color-bg-300: #e8e6dc;
+  --color-bg-400: #d1cfc5;
+
+  /* Shadows — Anthropic three-layer micro-shadow system */
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 2px 2px rgba(0,0,0,0.012), 0 4px 4px rgba(0,0,0,0.02), 0 16px 24px rgba(0,0,0,0.04);
+  --shadow-elevated: 0 16px 48px rgba(0,0,0,0.12);
+  --shadow-composer: 0 0.25rem 1.25rem rgba(0,0,0,0.035);
+  --shadow-modal: 0 16px 48px rgba(0,0,0,0.12);
+}
+
+/* 主题类：浅色/深色 */
+:root,
+.theme-light {
+  color-scheme: light;
+  --font-prose: 'Lora', Georgia, serif;
+}
+
+.theme-dark {
+  color-scheme: dark;
+
+  /* Surface colors — Anthropic warm darks */
+  --color-surface: #3d3d3a;
+  --color-surface-secondary: #2b2a27;
+  --color-surface-tertiary: #3d3d3a;
+  --color-surface-cream: #141413;
+
+  /* Ink colors (inverted for dark) */
+  --color-ink-900: #faf9f5;
+  --color-ink-800: #eeeeee;
+  --color-ink-700: #d1cfc5;
+  --color-ink-600: #b0aea5;
+  --color-ink-500: #9a9893;
+  --color-ink-400: #87867f;
+  --color-ink-300: #6b6a68;
+  --color-ink-200: #5e5d59;
+  --color-ink-100: #3d3d3a;
+  --color-ink-50: #2b2a27;
+
+  /* Muted colors */
+  --color-muted: #9a9893;
+  --color-muted-light: #b0aea5;
+
+  /* Accent — Anthropic clay for dark mode */
+  --color-accent: #d97757;
+  --color-accent-hover: #c4633a;
+  --color-accent-light: rgba(217,119,87,0.3);
+  --color-accent-subtle: rgba(217,119,87,0.12);
+  --color-accent-cta: #c6613f;
+
+  /* User message bubble */
+  --color-user-bubble: #393937;
+
+  /* Status colors */
+  --color-error: #F87171;
+  --color-error-light: rgba(248, 113, 113, 0.18);
+  --color-success: #34D399;
+  --color-success-light: rgba(52, 211, 153, 0.18);
+  --color-info: #60A5FA;
+  --color-info-light: rgba(96, 165, 250, 0.18);
+
+  /* Background colors */
+  --color-bg-000: #141413;
+  --color-bg-100: #1a1918;
+  --color-bg-200: #2b2a27;
+  --color-bg-300: #3d3d3a;
+  --color-bg-400: #5e5d59;
+
+  /* Shadows (dark mode uses borders instead, but keep for reference) */
+  --shadow-soft: 0 1px 2px rgba(0,0,0,0.35);
+  --shadow-card: 0 2px 2px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.2), 0 16px 24px rgba(0,0,0,0.18);
+  --shadow-elevated: 0 16px 48px rgba(0,0,0,0.45);
+  --shadow-composer: 0 0.25rem 1.25rem rgba(0,0,0,0.3);
+  --shadow-modal: 0 16px 48px rgba(0,0,0,0.45);
+}
+
+pre code.hljs {
+  background: transparent;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'DM Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--color-surface);
+  color: var(--color-ink-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+hr {
+  height: 1px;
+  margin: 1.5rem 0;
+  border: 0;
+  background-color: var(--color-ink-900);
+  opacity: 0.1;
+}
+
+@media (max-width: 768px) {
+  input, textarea, select {
+    font-size: 16px;
+  }
+}
+
+code, pre, textarea.mono, input.mono {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-ink-400);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink-500);
+}
+
+/* File Explorer auto-hide scrollbar — hidden at rest, visible on hover/scroll */
+.file-explorer-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.file-explorer-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.file-explorer-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.file-explorer-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 3px;
+  transition: background 0.25s;
+}
+
+.file-explorer-scroll:hover::-webkit-scrollbar-thumb {
+  background: rgba(148, 148, 148, 0.45);
+}
+
+.file-explorer-scroll:hover::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 148, 148, 0.7);
+}
+
+/* Sidebar scrollbar */
+.sidebar-session-list {
+  scrollbar-color: rgba(148, 148, 148, 0.6) transparent;
+}
+
+.sidebar-session-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-session-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-session-list::-webkit-scrollbar-thumb {
+  background: rgba(148, 148, 148, 0.6);
+  border-radius: 999px;
+}
+
+.sidebar-session-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 148, 148, 0.8);
+}
+
+/* Modal motion */
+@keyframes modal-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modal-pop-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.modal-backdrop {
+  animation: modal-fade-in 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.modal-shell {
+  animation: modal-pop-in 260ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal-backdrop,
+  .modal-shell {
+    animation: none;
+  }
+}
+
+/* Dark mode code highlight (GitHub Dark palette) */
+.theme-dark .hljs {
+  color: #c9d1d9;
+  background: transparent;
+}
+
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-meta .hljs-keyword,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-type,
+.theme-dark .hljs-variable.language_ {
+  color: #ff7b72;
+}
+
+.theme-dark .hljs-title,
+.theme-dark .hljs-title.class_,
+.theme-dark .hljs-title.class_.inherited__,
+.theme-dark .hljs-title.function_ {
+  color: #d2a8ff;
+}
+
+.theme-dark .hljs-attr,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-number,
+.theme-dark .hljs-operator,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-selector-id {
+  color: #79c0ff;
+}
+
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-string,
+.theme-dark .hljs-meta .hljs-string {
+  color: #a5d6ff;
+}
+
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-symbol {
+  color: #ffa657;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-code,
+.theme-dark .hljs-formula {
+  color: #8b949e;
+}
+
+.theme-dark .hljs-name,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-selector-pseudo {
+  color: #7ee787;
+}
+
+.theme-dark .hljs-subst {
+  color: #c9d1d9;
+}
+
+.theme-dark .hljs-section {
+  color: #1f6feb;
+  font-weight: bold;
+}
+
+.theme-dark .hljs-bullet {
+  color: #f2cc60;
+}
+
+.theme-dark .hljs-emphasis {
+  color: #c9d1d9;
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  color: #c9d1d9;
+  font-weight: bold;
+}
+
+.theme-dark .hljs-addition {
+  color: #aff5b4;
+  background-color: #033a16;
+}
+
+.theme-dark .hljs-deletion {
+  color: #ffdcd7;
+  background-color: #67060c;
+}
+
+/* Shimmer animation for partial message loading */
+@keyframes shimmer {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(120%); }
+}
+
+/* Widget shimmer animation (CDN loading / script streaming) */
+@keyframes widget-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.4s linear infinite;
+}
+
+/* Fade-in animation for content transitions */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 200ms ease-out;
+}
+
+/* Notification panel slide-in */
+@keyframes notif-panel-in {
+  from { opacity: 0; transform: translateY(-8px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes notif-panel-out {
+  from { opacity: 1; transform: translateY(0) scale(1); }
+  to { opacity: 0; transform: translateY(-8px) scale(0.96); }
+}
+
+.animate-notif-in {
+  animation: notif-panel-in 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-notif-out {
+  animation: notif-panel-out 150ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Notification content cross-fade */
+@keyframes notif-content-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-notif-content {
+  animation: notif-content-in 250ms ease-out;
+}
+
+/* Pulse-glow animation for CTA buttons */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 var(--color-accent); }
+  50% { box-shadow: 0 0 0 6px transparent; }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Image preview fade-in */
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 200ms ease-out;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+.typewriter-tab-hint:hover span {
+  background: color-mix(in srgb, var(--color-accent) 18%, transparent) !important;
+  border-color: color-mix(in srgb, var(--color-accent) 35%, transparent) !important;
+}
+
+
+/* Skip rendering for off-screen chat messages */
+.message-virtualized {
+  /* Disabled for stability:
+     Electron 在窗口切回前台时偶发不重绘，导致聊天区空白直到滚动。 */
+}
+
+/* Prose container for AI message text content */
+.prose-container {
+  width: 100%;
+  max-width: min(100%, 54rem);
+  font-size: 0.875rem;
+  line-height: 1.625;
+  color: var(--color-ink-800);
+}
+
+.prose-container > :first-child {
+  margin-top: 0;
+}
+
+.prose-container > :last-child {
+  margin-bottom: 0;
+}
+
+/* ── Icon hover animations ── */
+/* 公共：所有 icon-hover-* 的 SVG 默认关闭 animation，hover 时触发一次 */
+
+@keyframes icon-spin-once {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes icon-ring {
+  0%   { transform: rotate(0deg); }
+  15%  { transform: rotate(16deg); }
+  30%  { transform: rotate(-13deg); }
+  45%  { transform: rotate(10deg); }
+  60%  { transform: rotate(-7deg); }
+  75%  { transform: rotate(4deg); }
+  90%  { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes icon-bounce-up {
+  0%   { transform: translateY(0); }
+  35%  { transform: translateY(-4px); }
+  65%  { transform: translateY(-2px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes icon-pop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.25); }
+  70%  { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+@keyframes icon-slide-right {
+  0%   { transform: translateX(0); }
+  40%  { transform: translateX(4px); }
+  70%  { transform: translateX(2px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes icon-slide-left {
+  0%   { transform: translateX(0); }
+  40%  { transform: translateX(-4px); }
+  70%  { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes icon-wiggle {
+  0%   { transform: rotate(0deg); }
+  20%  { transform: rotate(-18deg); }
+  50%  { transform: rotate(14deg); }
+  75%  { transform: rotate(-8deg); }
+  90%  { transform: rotate(4deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* 应用类：为 button 添加对应 class，hover 时其内部 svg 触发一次动画 */
+.icon-hover-spin:hover svg    { animation: icon-spin-once  0.45s ease; }
+.icon-hover-ring:hover svg    { animation: icon-ring       0.55s ease; }
+.icon-hover-bounce:hover svg  { animation: icon-bounce-up  0.4s  ease; }
+.icon-hover-pop:hover svg     { animation: icon-pop        0.35s ease; }
+.icon-hover-slide-right:hover svg { animation: icon-slide-right 0.35s ease; }
+.icon-hover-slide-left:hover svg  { animation: icon-slide-left  0.35s ease; }
+.icon-hover-wiggle:hover svg  { animation: icon-wiggle     0.45s ease; }
+
+/* 文件树行专用：只动最后一个 svg（文件/夹图标），跳过 ChevronIcon */
+.icon-hover-file-bounce:hover svg:last-of-type { animation: icon-bounce-up 0.4s ease; }
+
+/* 欢迎页产品图标：持续浮动 + hover 放大 */
+@keyframes welcome-icon-float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  30%       { transform: translateY(-8px) rotate(-1.5deg); }
+  70%       { transform: translateY(-5px) rotate(1deg); }
+}
+.welcome-icon-float {
+  animation: welcome-icon-float 4s ease-in-out infinite;
+}
+.welcome-icon-float:hover {
+  animation: none;
+  transform: scale(1.08);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes workpanel-indeterminate {
+  0% {
+    left: -40%;
+  }
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}

@@ -1,0 +1,7 @@
+# Python checksum lock file
+# Audited by: sunyunfeng on 2026-03-09
+# Source: https://github.com/astral-sh/python-build-standalone/releases/download/20241219/SHA256SUMS
+# Variant: install_only_stripped (minimal, no debug symbols)
+darwin-arm64=abe1de2494bb8b243fd507944f4d50292848fa00685d5288c858a72623a16635
+darwin-x64=867c1af10f204224b571f8f2593fc9eb580fe0c2376224d1096ebe855ad8c722
+win32-x64=1a702b3463cf87ec0d2e33902a47e95456053b0178fe96bd673c1dbb554f5d15

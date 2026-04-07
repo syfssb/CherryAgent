@@ -1,0 +1,498 @@
+{
+  "nav": {
+    "features": "特色",
+    "steps": "使用方式",
+    "faq": "常見問題",
+    "download": "下載",
+    "register": "註冊"
+  },
+  "hero": {
+    "title": "別再跟 AI 聊天了，",
+    "titleHighlight": "讓它幫你幹活",
+    "description": "Cherry Agent 是一個桌面 AI Agent。給它一句指令，它就能整理檔案、處理資料、生成報告——不是對話，是真的在做事。",
+    "downloadBtn": "免費試用",
+    "version": "v{{version}}",
+    "typewriterScenes": [
+      "幫我把下載資料夾按類型整理好",
+      "從這 50 張收據裡提取金額，生成報銷表",
+      "分析這份銷售資料，找出成長最快的品類"
+    ]
+  },
+  "painPoints": {
+    "title": "你是不是也這樣？",
+    "item1": {
+      "title": "跟 AI 聊了半天，最後還是自己動手",
+      "desc": "普通 AI 聊天工具只會給建議，不會真的幫你執行。你花 10 分鐘描述需求，得到一堆文字，然後還要自己複製貼上、手動操作。"
+    },
+    "item2": {
+      "title": "訂閱了 3 個 AI 工具，每月花 NT$2000+",
+      "desc": "ChatGPT Plus、Claude Pro、各種外掛...每個都有一點用，但沒有一個能真正搞定所有事。錢花了，效率沒提多少。"
+    },
+    "item3": {
+      "title": "想用 AI 處理本地檔案，但不敢上傳",
+      "desc": "公司文件、財務資料、個人照片...你知道 AI 能幫忙，但把檔案傳到雲端總覺得不放心。"
+    }
+  },
+  "marquee": {
+    "title": "支援主流 AI 模型"
+  },
+  "showcase": {
+    "title": "簡潔而強大的介面",
+    "description": "精心設計的對話介面，讓你專注於與 AI 的互動",
+    "screenshot1Alt": "Cherry Agent 桌面介面截圖 1",
+    "screenshot2Alt": "Cherry Agent 桌面介面截圖 2"
+  },
+  "whatItIs": {
+    "line1": "不是聊天機器人。",
+    "line2": "是住在你電腦裡的 AI 員工。",
+    "description": "Cherry Agent 運行在你的桌面上，能直接操作本地檔案、處理資料、生成文件。你說一句話，它就去做——不需要複製貼上，不需要來回切換視窗。"
+  },
+  "features": {
+    "title": "為什麼選擇 Cherry Agent",
+    "memory": {
+      "title": "越用越聰明",
+      "desc": "自動記住你的工作習慣、專案背景和偏好。不用每次重新解釋，它已經知道你要什麼。"
+    },
+    "privacy": {
+      "title": "資料不出你的電腦",
+      "desc": "所有對話和檔案都存在本地，不上傳雲端。你的資料，只有你能看到。"
+    },
+    "skills": {
+      "title": "裝上技能，什麼都能幹",
+      "desc": "內建文件處理、程式碼審查、資料分析等專業技能，還能自己新增。像給 AI 裝 App 一樣簡單。"
+    },
+    "extensible": {
+      "title": "自由選擇模型",
+      "desc": "支援 Claude 全系列（Haiku、Sonnet、Opus），從輕量快速到深度推理，按需選擇最合適的模型。按量計費，比訂閱更划算。"
+    }
+  },
+  "useCases": {
+    "title": "省下來的時間，夠你多喝兩杯咖啡",
+    "subtitle": "這些事情，以前要花好幾個小時。現在一句話搞定。",
+    "fileManagement": {
+      "title": "檔案整理",
+      "desc": "自動整理下載資料夾，按類型分類、重新命名檔案、標記重複項，讓混亂的檔案井然有序。",
+      "timeBefore": "2-3小時",
+      "timeAfter": "5分鐘"
+    },
+    "receiptProcessing": {
+      "title": "收據管理",
+      "desc": "識別收據照片中的日期、商家、金額，自動生成報銷表格，月度報銷輕鬆搞定。",
+      "timeBefore": "半天",
+      "timeAfter": "10分鐘"
+    },
+    "dataAnalysis": {
+      "title": "資料清洗",
+      "desc": "清洗銷售資料，刪除重複記錄、填充缺失值、標準化格式，生成分析報告。",
+      "timeBefore": "2天",
+      "timeAfter": "30分鐘"
+    },
+    "meetingNotes": {
+      "title": "會議記錄",
+      "desc": "從多個會議記錄中提取行動項，按負責人分類，生成週度摘要，不遺漏任何重要資訊。",
+      "timeBefore": "2小時",
+      "timeAfter": "15分鐘"
+    }
+  },
+  "steps": {
+    "title": "30 秒上手",
+    "step1": {
+      "number": "01",
+      "title": "下載安裝",
+      "desc": "下載安裝包，雙擊打開，搞定。"
+    },
+    "step2": {
+      "number": "02",
+      "title": "說出需求",
+      "desc": "用自然語言告訴它你要做什麼，不需要學任何指令。"
+    },
+    "step3": {
+      "number": "03",
+      "title": "坐等結果",
+      "desc": "Cherry Agent 會自動選擇最合適的模型和技能，幫你把事情做完。"
+    }
+  },
+  "testimonials": {
+    "title": "用戶怎麼說",
+    "subtitle": "真實用戶的使用感受",
+    "freelancer": {
+      "avatar": "李",
+      "name": "李明",
+      "role": "自由工作者",
+      "quote": "我的下載資料夾終於不是一團亂了。以前找個檔案要翻半天，現在一句話就整理好了，真的很方便。"
+    },
+    "projectManager": {
+      "avatar": "王",
+      "name": "王芳",
+      "role": "專案經理",
+      "quote": "週報從 2 小時變成 20 分鐘。團隊的人不用再問我「那個文件在哪」了，省了好多溝通成本。"
+    },
+    "student": {
+      "avatar": "張",
+      "name": "張偉",
+      "role": "大學生",
+      "quote": "期末複習的時候用它整理了一學期的筆記，生成的大綱比我自己整理的清楚多了。"
+    },
+    "salesPerson": {
+      "avatar": "劉",
+      "name": "劉強",
+      "role": "銷售人員",
+      "quote": "每月報銷從半天變成 10 分鐘，收據拍個照就搞定了。早知道有這個工具就好了。"
+    },
+    "contentCreator": {
+      "avatar": "陳",
+      "name": "陳靜",
+      "role": "內容創作者",
+      "quote": "整理資料的時間從 3 小時降到半小時，剩下的時間可以專心寫東西了。效率提升太明顯了。"
+    }
+  },
+  "faq": {
+    "title": "常見問題",
+    "items": [
+      {
+        "q": "跟 ChatGPT / Claude 官方客戶端有什麼區別？",
+        "a": "最大的區別是 Cherry Agent 能直接操作你電腦上的檔案和資料，而不只是聊天。它有技能擴展系統，可以像裝 App 一樣給 AI 添加新能力。而且資料全部存在本地，不上傳雲端。"
+      },
+      {
+        "q": "為什麼價格能做到比官方便宜？",
+        "a": "我們採用按量計費模式，你用多少付多少，不需要每月固定訂閱，所以能把成本降下來。"
+      },
+      {
+        "q": "Cherry Agent 是免費的嗎？",
+        "a": "Cherry Agent 採用按量付費模式，註冊即送體驗額度，用完後按實際使用量計費。"
+      },
+      {
+        "q": "支援哪些 AI 模型？",
+        "a": "支援 Claude 全系列：Claude Haiku 4.5（速度最快、最省費用）、Claude Sonnet 4.6（綜合能力最強）、Claude Opus 4.6（最強推理）。系統根據任務複雜度自動推薦，你也可以手動選擇。"
+      },
+      {
+        "q": "我的資料安全嗎？",
+        "a": "所有對話資料儲存在你的本地裝置上，我們不會上傳或儲存你的任何對話內容。你的資料完全由你掌控。"
+      },
+      {
+        "q": "如何獲取技術支援？",
+        "a": "你可以透過應用內回饋功能提交問題，或加入我們的社群獲取幫助。我們會盡快回應每一個回饋。"
+      },
+      {
+        "q": "如何聯絡客服？",
+        "a": "微信: JsnonoChat\n郵箱: 1073634403@qq.com"
+      },
+      {
+        "q": "如何管理 AI 的權限策略？",
+        "a": "Cherry Agent 預設採用最小權限策略，檔案讀寫、指令執行等敏感操作均需你在介面上確認。你也可以在設定中配置自動批准權限，讓 AI 更高效地完成批量任務，完全由你掌控。"
+      }
+    ]
+  },
+  "providers": {
+    "title": "由 Claude 全系列驅動",
+    "subtitle": "Anthropic 出品，從輕量到深度推理，覆蓋所有工作場景",
+    "claude": {
+      "title": "Claude 全系列",
+      "desc": "Anthropic 出品的頂尖 AI，擅長複雜推理、程式碼生成和精細任務執行",
+      "features": ["深度推理與長鏈分析", "複雜程式碼生成與審查", "精細權限控制，每步可確認"]
+    },
+    "routing": {
+      "title": "智能模型路由",
+      "desc": "根據任務複雜度自動推薦最優模型——簡單任務用 Haiku 節省成本，複雜任務自動切換 Sonnet 或 Opus，完全由你掌控。"
+    },
+    "capabilities": {
+      "smartModel": {
+        "title": "智慧模型選擇",
+        "desc": "根據任務複雜度自動推薦最優模型——簡單任務用 Haiku 節省成本，複雜任務自動切換 Sonnet 或 Opus，完全由你掌控。"
+      },
+      "skillSystem": {
+        "title": "技能擴展系統",
+        "desc": "透過技能外掛無限擴展 AI 能力——PDF 處理、網頁搜尋、程式碼生成、文件編寫，一鍵安裝即用。"
+      },
+      "crossPlatform": {
+        "title": "全平台安全",
+        "desc": "支援 macOS 和 Windows，資料本地儲存，對話記錄不上傳雲端，你的隱私完全屬於你。"
+      }
+    }
+  },
+  "security": {
+    "title": "透明可控，值得信賴",
+    "subtitle": "從權限到資料，每一步都在你的掌控之中",
+    "permissions": {
+      "title": "權限透明",
+      "desc": "預設最小權限策略，檔案讀寫、指令執行等敏感操作均需你確認。你清楚 AI 在做什麼，也能隨時叫停。"
+    },
+    "enterprise": {
+      "title": "企業可控",
+      "desc": "管理後台可統一配置權限策略、模型白名單和使用額度，滿足團隊合規需求。"
+    },
+    "data": {
+      "title": "資料安全",
+      "desc": "對話和檔案全部儲存在本地裝置，不經過第三方伺服器。API 通訊全程加密，金鑰由你自己管理。"
+    }
+  },
+  "bottomCta": {
+    "title": "每天還在手動做這些事？",
+    "description": "下載 Cherry Agent，讓 AI 幫你把時間省出來。",
+    "downloadBtn": "立即下載，免費體驗"
+  },
+  "antivirusHint": "安裝或使用時若遇到攔截，請暫時關閉 360、火絨等防毒軟體",
+  "antivirusModal": {
+    "title": "溫馨提示",
+    "confirm": "知道了，前往下載",
+    "installHint": "若安裝時彈出系統安全提示，請依照以下步驟操作"
+  },
+  "a11y": {
+    "openMenu": "開啟選單",
+    "closeMenu": "關閉選單",
+    "selectLanguage": "選擇語言",
+    "languageOptions": "語言選項",
+    "switchToDarkMode": "切換到深色模式",
+    "switchToLightMode": "切換到淺色模式"
+  },
+  "footer": {
+    "copyright": "© {{year}} Cherry Agent",
+    "product": "產品",
+    "contact": "聯絡我們",
+    "company": {
+      "operatedBy": "由英國公司 CHERRYCHAT LTD 營運",
+      "numberLabel": "公司編號: {{number}}"
+    },
+    "contactInfo": {
+      "wechat": "微信",
+      "email": "郵箱"
+    },
+    "links": {
+      "features": "特色",
+      "download": "下載"
+    }
+  },
+  "register": {
+    "sideTitle": "30 秒後，你就有了一個 AI 員工",
+    "sideSubtitle": "註冊即送體驗額度，不需要綁定信用卡",
+    "features": {
+      "memory": { "title": "註冊即送 NT$3 體驗額度", "desc": "夠你完整體驗檔案整理、資料處理等核心功能" },
+      "privacy": { "title": "不需要信用卡", "desc": "零門檻開始，用完再決定要不要儲值" },
+      "skills": { "title": "30 秒完成註冊", "desc": "填個信箱設個密碼，馬上開始用" },
+      "price": { "title": "資料完全在你手裡", "desc": "所有檔案和對話都存在本地，我們看不到" }
+    },
+    "socialProof": "今天已有 128 人註冊",
+    "testimonial": {
+      "quote": "本來只是試試，結果第一天就用它整理了 200 多個檔案。現在每天都在用。",
+      "author": "劉強，業務經理"
+    },
+    "formTitle": "免費開始",
+    "formSubtitle": "註冊後立即獲得體驗額度",
+    "fields": {
+      "email": "電子信箱",
+      "password": "密碼",
+      "confirmPassword": "確認密碼",
+      "nickname": "暱稱",
+      "nicknameOptional": "暱稱（選填）",
+      "referralCode": "邀請碼",
+      "referralCodeOptional": "邀請碼（選填）"
+    },
+    "placeholders": {
+      "email": "your@email.com",
+      "password": "至少 8 位，含大小寫字母和數字",
+      "confirmPassword": "再次輸入密碼",
+      "nickname": "你希望怎麼稱呼你",
+      "referralCode": "輸入好友邀請碼"
+    },
+    "passwordStrength": {
+      "label": "密碼強度：",
+      "weak": "弱",
+      "medium": "中",
+      "strong": "強"
+    },
+    "referralBanner": {
+      "title": "🎁 好友邀請你加入",
+      "desc": "註冊即享 NT${{amount}} 專屬獎勵"
+    },
+    "backToHome": "了解更多",
+    "submitBtn": "立即註冊",
+    "submitting": "註冊中...",
+    "hasAccount": "已有帳號？請在",
+    "desktopClient": "桌面用戶端",
+    "loginSuffix": "中登入",
+    "validation": {
+      "emailRequired": "請輸入電子信箱",
+      "emailInvalid": "電子信箱格式不正確",
+      "passwordMin": "密碼至少 8 個字元",
+      "passwordUppercase": "密碼需要包含大寫字母",
+      "passwordLowercase": "密碼需要包含小寫字母",
+      "passwordNumber": "密碼需要包含數字",
+      "passwordMismatch": "兩次輸入的密碼不一致"
+    },
+    "errors": {
+      "registerFailed": "註冊失敗，請稍後再試",
+      "networkError": "網路錯誤，請檢查網路連線後重試"
+    },
+    "success": {
+      "title": "註冊成功！",
+      "reward": "恭喜！您已獲得 NT${{amount}} 新用戶獎勵",
+      "description": "下載桌面用戶端，開始讓 AI 幫你幹活",
+      "downloadWithVersion": "下載 {{platform}} v{{version}}",
+      "downloadPlatform": "下載 {{platform}} 版",
+      "otherPlatforms": "其他平台：",
+      "backHome": "返回首頁",
+      "verifyEmailTitle": "驗證您的信箱",
+      "verifyEmailDesc": "我們已向 {{email}} 發送了驗證郵件，請點擊郵件中的連結完成驗證後即可登入使用。",
+      "verifyEmailHint": "如未收到，請檢查垃圾郵件資料夾"
+    },
+    "providerInterest": {
+      "title": "你更感興趣的功能是？",
+      "claudeDesc": "深度推理",
+      "codexDesc": "檔案處理",
+      "both": "都想用",
+      "bothDesc": "全功能體驗"
+    }
+  },
+  "userGuide": {
+    "sectionLabel": "入門指南",
+    "title": "使用指南",
+    "subtitle": "5 分鐘從新手到熟手，每一步都有截圖說明",
+    "nextStep": "下一步",
+    "chapters": {
+      "what": {
+        "label": "第一章",
+        "num": "01",
+        "title": "Cherry Agent 是什麼？",
+        "subtitle": "AI 幫你做事，不只是聊天",
+        "steps": {
+          "s1": {
+            "title": "不只是聊天，是真的在幹活",
+            "description": "普通 AI（比如 ChatGPT）只能給你答案，你還是得自己動手。Cherry Agent 不一樣——它能直接操作你的電腦，整理檔案、搜尋網頁、生成表格，你說任務它來執行，全程可以看到它在做什麼。"
+          },
+          "s2": {
+            "title": "6 大能力，覆蓋日常工作",
+            "description": "檔案管理、資料處理、內容創作、學習研究、工作協作、個人生活。打開 App 就能看到 40 個預置任務，點一下就能用，不需要任何學習成本。"
+          }
+        }
+      },
+      "firstTask": {
+        "label": "第二章",
+        "num": "02",
+        "title": "發送你的第一個任務",
+        "subtitle": "5 步完成，3 分鐘上手",
+        "steps": {
+          "s1": {
+            "title": "認識主介面",
+            "description": "打開 Cherry Agent，左側是歷史對話列表，中間是任務分類（檔案管理、資料處理、內容創作等），你可以直接點選預置任務快速開始，也可以在底部輸入框輸入任何指令。"
+          },
+          "s2": {
+            "title": "點擊「新建任務」",
+            "description": "點擊左上角的「+ 新建任務」按鈕，彈出會話設定視窗。在這裡你需要完成兩項設定：工作目錄和 AI 模型。"
+          },
+          "s3": {
+            "title": "選擇工作目錄（重要）",
+            "description": "Agent 會在這個目錄裡操作檔案，它只能讀寫這個資料夾裡的內容，不會碰其他地方的檔案。\n\n建議把需要處理的檔案都放在同一個資料夾裡，再選這個資料夾作為工作目錄。",
+            "tip": "工作目錄就像 Agent 的「工作台」——它只能操作這個範圍內的檔案，你其他地方的檔案完全安全，不用擔心被誤操作。"
+          },
+          "s4": {
+            "title": "選擇 AI 模型",
+            "description": "日常任務選 Claude Haiku 4.5（速度最快，積分消耗最少）；複雜分析或寫作選 Claude Sonnet 4.6（能力更強）；超複雜任務選 Claude Opus 4.6。\n\n不確定選哪個？保持預設就行，系統會自動推薦適合的模型。"
+          },
+          "s5": {
+            "title": "描述任務，發送",
+            "description": "在底部輸入框用中文說出你要做什麼，越具體越好。點擊發送後，你能看到 Agent 的「思考過程」——它在分析任務、呼叫工具、一步步執行。全程透明，隨時可以暫停或干預。"
+          }
+        }
+      },
+      "settings": {
+        "label": "第三章",
+        "num": "03",
+        "title": "個人化設定",
+        "subtitle": "讓 Agent 更了解你",
+        "steps": {
+          "s1": {
+            "title": "記憶：讓 AI 記住你",
+            "description": "在「設定 → 記憶」中，把常用資訊寫進去，比如你的名字、職業、工作習慣、專案背景。Agent 每次對話都會自動參考這些資訊，不用每次重新解釋。"
+          },
+          "s2": {
+            "title": "技能：開啟/關閉功能",
+            "description": "「設定 → 技能」裡有 17 個內建技能，包括網頁瀏覽、程式碼生成、腦力激盪、資料分析等，可以按需開啟或關閉。"
+          },
+          "s3": {
+            "title": "外觀：深色/淺色隨你選",
+            "description": "「設定 → 外觀」可以切換介面主題（淺色/深色/跟隨系統），以及切換顯示語言。"
+          },
+          "s4": {
+            "title": "同步：多裝置無縫切換",
+            "description": "開啟「設定 → 同步」後，對話記錄、記憶資料、技能設定會自動備份到雲端，每 5 分鐘同步一次。"
+          }
+        }
+      },
+      "billing": {
+        "label": "第四章",
+        "num": "04",
+        "title": "積分與儲值",
+        "subtitle": "按量計費，用多少付多少",
+        "steps": {
+          "s1": {
+            "title": "積分是什麼？",
+            "description": "積分是 Cherry Agent 的使用貨幣。1 積分 = 0.1 元人民幣。每次對話消耗積分，消耗多少取決於使用的模型和對話長度。\n\n• Claude Haiku 4.5：最省積分，適合日常任務\n• Claude Sonnet 4.6：中等消耗，綜合能力最強\n• Claude Opus 4.6：消耗最多，適合超複雜任務"
+          },
+          "s2": {
+            "title": "每日簽到，免費領積分",
+            "description": "每天打開 App 可以免費簽到領積分，連續簽到還有額外獎勵。這是最簡單的免費獲取積分方式。"
+          },
+          "s3": {
+            "title": "月卡方案怎麼選？",
+            "description": "三種月卡，按使用強度選：\n\n• Agent Plus 月卡 ¥300：每日 175 積分\n• Agent Pro 月卡 ¥788：每日 525 積分\n• Agent Max 月卡 ¥1399：每日 1400 積分\n\n套餐額度每日 0 點重置，可疊加購買。"
+          },
+          "s4": {
+            "title": "按量儲值積分",
+            "description": "不想訂月卡？可以直接按量儲值積分，50 元起儲，1000 元對應 10000 積分。\n\n支援微信支付、支付寶、Visa/MasterCard 等國際信用卡。"
+          }
+        }
+      },
+      "referral": {
+        "label": "第五章",
+        "num": "05",
+        "title": "邀請好友得佣金",
+        "subtitle": "分享給朋友，每次儲值都有返利",
+        "steps": {
+          "s1": {
+            "title": "找到你的專屬邀請碼",
+            "description": "進入「設定 → 推薦」，你會看到專屬邀請碼和邀請連結。把連結分享給朋友，或讓朋友註冊時輸入你的邀請碼，即可建立推薦關係。"
+          },
+          "s2": {
+            "title": "好友儲值，你得佣金",
+            "description": "好友每次儲值，你都會獲得相應比例的佣金獎勵。佣金經審核通過後，可以申請提現到支付寶帳號。\n\n如有提現問題，聯繫客服微信：JsnonoChat。"
+          }
+        }
+      },
+      "shortcuts": {
+        "label": "快捷鍵",
+        "num": "06",
+        "title": "快捷鍵速查",
+        "subtitle": "掌握這些，效率翻倍"
+      }
+    },
+    "shortcutGroups": {
+      "navigation": {
+        "title": "頁面導覽",
+        "items": {
+          "chat": "聊天頁",
+          "skills": "技能市場",
+          "memory": "記憶管理",
+          "usage": "使用量",
+          "settings": "設定"
+        }
+      },
+      "session": {
+        "title": "會話管理",
+        "items": {
+          "new": "新建會話",
+          "prev": "上一個會話",
+          "next": "下一個會話",
+          "close": "關閉 / 刪除會話"
+        }
+      },
+      "input": {
+        "title": "輸入",
+        "items": {
+          "send": "發送訊息",
+          "newline": "換行",
+          "paste": "貼上圖片"
+        }
+      }
+    }
+  }
+}

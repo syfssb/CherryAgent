@@ -1,0 +1,124 @@
+{
+    "appId": "com.devagentforge.cherryagent",
+    "productName": "Cherry Agent",
+    "files": [
+        "dist-electron/**/*",
+        "dist-react/**/*",
+        "!dist-installer*/**",
+        "!dist-electron/**/__tests__/**",
+        "!dist-electron/**/*.test.js",
+        "!dist-electron/**/*.spec.js",
+        "!dist-electron/**/*.map",
+        "!dist-react/**/*.map",
+        "!**/*.md",
+        "!**/.DS_Store"
+    ],
+    "extraResources": [
+        "dist-electron/preload.cjs",
+        {
+            "from": "resources/preset-skills",
+            "to": "preset-skills",
+            "filter": ["**/*"]
+        }
+    ],
+    "asarUnpack": [
+        "**/node_modules/@anthropic-ai/claude-agent-sdk/cli.js",
+        "**/node_modules/@anthropic-ai/claude-agent-sdk/sdk.mjs",
+        "**/node_modules/@anthropic-ai/claude-agent-sdk/*.wasm",
+        "**/node_modules/@anthropic-ai/claude-agent-sdk/vendor/**",
+        "**/node_modules/@anthropic-ai/claude-agent-sdk/dist/**/*.node",
+        "**/node_modules/better-sqlite3/**/*.node",
+        "**/node_modules/@openai/codex-*/vendor/**"
+    ],
+    "asar": {
+        "smartUnpack": true
+    },
+    "compression": "maximum",
+    "afterPack": "scripts/electron-builder-after-pack.cjs",
+    "nodeGypRebuild": false,
+    "buildDependenciesFromSource": false,
+    "icon": "./cherry2-square.png",
+    "protocols": [
+        {
+            "name": "Cherry Agent Auth",
+            "schemes": ["cherry-agent"]
+        }
+    ],
+    "publish": {
+        "provider": "generic",
+        "url": ""
+    },
+    "mac": {
+        "target": [
+            {
+                "target": "dmg",
+                "arch": ["arm64", "x64"]
+            }
+        ],
+        "entitlements": "build/entitlements.mac.plist",
+        "entitlementsInherit": "build/entitlements.mac.plist",
+        "hardenedRuntime": true,
+        "gatekeeperAssess": false,
+        "extendInfo": {
+            "CFBundleURLTypes": [
+                {
+                    "CFBundleURLName": "Cherry Agent Auth",
+                    "CFBundleURLSchemes": ["cherry-agent"]
+                }
+            ]
+        },
+        "category": "public.app-category.developer-tools"
+    },
+    "dmg": {
+        "contents": [
+            {
+                "x": 130,
+                "y": 220
+            },
+            {
+                "x": 410,
+                "y": 220,
+                "type": "link",
+                "path": "/Applications"
+            }
+        ]
+    },
+    "linux": {
+        "target": ["AppImage"],
+        "category": "Utility",
+        "mimeTypes": ["x-scheme-handler/cherry-agent"]
+    },
+    "win": {
+        "icon": "./app-icon.ico",
+        "target": [
+            {
+                "target": "nsis",
+                "arch": ["x64"]
+            }
+        ],
+        "verifyUpdateCodeSignature": false,
+        "extraResources": [
+            {
+                "from": "resources/vendor/win32",
+                "to": "vendor/win32",
+                "filter": ["*.exe", "*.dll"]
+            }
+        ]
+    },
+    "nsis": {
+        "oneClick": false,
+        "perMachine": false,
+        "allowToChangeInstallationDirectory": true,
+        "createDesktopShortcut": true,
+        "createStartMenuShortcut": true,
+        "shortcutName": "Cherry Agent",
+        "installerIcon": "./app-icon.ico",
+        "uninstallerIcon": "./app-icon.ico",
+        "installerHeader": "./cherry2-square.png",
+        "include": "build/installer.nsh"
+    },
+    "directories": {
+        "output": "dist-installer",
+        "buildResources": "build"
+    }
+}

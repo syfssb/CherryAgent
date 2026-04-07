@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cherry Agent</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+    style-src 'self' 'unsafe-inline' https://turing.captcha.qcloud.com https://turing.captcha.gtimg.com https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: https://challenges.cloudflare.com https://turing.captcha.qcloud.com https://turing.captcha.gtimg.com https://s4.zstatic.net https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com https://esm.sh;
+    script-src-elem 'self' 'unsafe-eval' 'unsafe-inline' blob: https://challenges.cloudflare.com https://turing.captcha.qcloud.com https://turing.captcha.gtimg.com https://s4.zstatic.net https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com https://esm.sh;
+    worker-src 'self' blob:;
+    child-src 'self' blob:;
+    connect-src 'self' http://localhost:* http://127.0.0.1:* https://challenges.cloudflare.com https://*.captcha.qcloud.com https://*.captcha.gtimg.com https://*.tencentcloudapi.com;
+    img-src 'self' data: blob: https://*.googleusercontent.com https://*.xunhupay.com https://*.captcha.qcloud.com https://*.captcha.gtimg.com;
+    frame-src 'self' blob: https://challenges.cloudflare.com https://*.captcha.qcloud.com https://*.captcha.gtimg.com;">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/ui/main.tsx"></script>
+</body>
+
+</html>

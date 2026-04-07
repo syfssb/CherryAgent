@@ -1,0 +1,15 @@
+export { handleClientEvent, initializeSessions, cleanupAllSessions, sessions, tagsStore, memoryStore, skillStore, registerDebugHandlers } from "./ipc/core.js";
+export { workspaceWatcher } from "./libs/workspace-watcher.js";
+export { registerAuthHandlers, handleAuthDeepLink } from "./ipc/auth-handlers.js";
+export { registerTagHandlers } from "./ipc/tag-handlers.js";
+export { registerSessionOperationHandlers } from "./ipc/session-operation-handlers.js";
+export { registerWorkspaceHandlers } from "./ipc/workspace-handlers.js";
+export { registerMemoryHandlers } from "./ipc/memory-handlers.js";
+export { registerSkillHandlers } from "./ipc/skill-handlers.js";
+export { registerDataHandlers } from "./ipc/data-handlers.js";
+export { registerSyncHandlers } from "./ipc/sync-handlers.js";
+export { registerBillingHandlers } from "./ipc/billing-handlers.js";
+export { registerBootstrapHandler } from "./ipc/bootstrap-handlers.js";
+export { registerNotificationHandlers } from "./ipc/notification-handlers.js";
+export { setupProxyHandlers } from "./ipc/proxy-handlers.js";
+export { registerTaskManagerHandlers, cleanupTaskManager } from "./ipc/task-manager-handlers.js";

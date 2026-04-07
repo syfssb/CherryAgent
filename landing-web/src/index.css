@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Anthropic 暖象牙色彩系统 */
+:root {
+  --bg-primary: #faf9f5;
+  --bg-surface: #ffffff;
+  --bg-secondary: #f0eee6;
+  --bg-border: #1414131a;
+  --text-primary: #141413;
+  --text-secondary: #6b6a68;
+  --text-tertiary: #87867f;
+  --brand-primary: #ae5630;
+  --brand-hover: #c4633a;
+  --brand-cta: #c6613f;
+}
+
+.dark {
+  --bg-primary: #141413;
+  --bg-surface: #2b2a27;
+  --bg-secondary: #3d3d3a;
+  --bg-border: #faf9f51a;
+  --text-primary: #faf9f5;
+  --text-secondary: #9a9893;
+  --text-tertiary: #87867f;
+  --brand-primary: #ae5630;
+  --brand-hover: #c4633a;
+  --brand-cta: #c6613f;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(174, 86, 48, 0.2);
+  color: var(--text-primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-primary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-hover);
+}

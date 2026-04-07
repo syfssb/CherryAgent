@@ -1,0 +1,498 @@
+{
+  "nav": {
+    "features": "特性",
+    "steps": "使用方法",
+    "faq": "常见问题",
+    "download": "下载",
+    "register": "注册"
+  },
+  "hero": {
+    "title": "别再跟 AI 聊天了，",
+    "titleHighlight": "让它帮你干活",
+    "description": "Cherry Agent 是一个桌面 AI Agent。给它一句指令，它就能整理文件、处理数据、生成报告——不是对话，是真的在做事。",
+    "downloadBtn": "免费试用",
+    "version": "v{{version}}",
+    "typewriterScenes": [
+      "帮我把下载文件夹按类型整理好",
+      "从这 50 张收据里提取金额，生成报销表",
+      "分析这份销售数据，找出增长最快的品类"
+    ]
+  },
+  "marquee": {
+    "title": "支持主流 AI 模型"
+  },
+  "showcase": {
+    "title": "简洁而强大的界面",
+    "description": "精心设计的对话界面，让你专注于与 AI 的交互",
+    "screenshot1Alt": "Cherry Agent 桌面界面截图 1",
+    "screenshot2Alt": "Cherry Agent 桌面界面截图 2"
+  },
+  "painPoints": {
+    "title": "你是不是也这样？",
+    "item1": {
+      "title": "跟 AI 聊了半天，最后还是自己动手",
+      "desc": "普通 AI 聊天工具只会给建议，不会真的帮你执行。你花 10 分钟描述需求，得到一堆文字，然后还要自己复制粘贴、手动操作。"
+    },
+    "item2": {
+      "title": "订阅了 3 个 AI 工具，每月花 ¥500+",
+      "desc": "ChatGPT Plus、Claude Pro、各种插件...每个都有一点用，但没有一个能真正搞定所有事。钱花了，效率没提多少。"
+    },
+    "item3": {
+      "title": "想用 AI 处理本地文件，但不敢上传",
+      "desc": "公司文档、财务数据、个人照片...你知道 AI 能帮忙，但把文件传到云端总觉得不放心。"
+    }
+  },
+  "whatItIs": {
+    "line1": "不是聊天机器人。",
+    "line2": "是住在你电脑里的 AI 员工。",
+    "description": "Cherry Agent 运行在你的桌面上，能直接操作本地文件、处理数据、生成文档。你说一句话，它就去做——不需要复制粘贴，不需要来回切换窗口。"
+  },
+  "features": {
+    "title": "为什么选择 Cherry Agent",
+    "memory": {
+      "title": "越用越聪明",
+      "desc": "自动记住你的工作习惯、项目背景和偏好。不用每次重新解释，它已经知道你要什么。"
+    },
+    "privacy": {
+      "title": "数据不出你的电脑",
+      "desc": "所有对话和文件都存在本地，不上传云端。你的数据，只有你能看到。"
+    },
+    "skills": {
+      "title": "装上技能，什么都能干",
+      "desc": "内置文档处理、代码审查、数据分析等专业技能，还能自己添加。像给 AI 装 App 一样简单。"
+    },
+    "extensible": {
+      "title": "自由选择模型",
+      "desc": "支持 Claude 全系列（Haiku、Sonnet、Opus），从轻量快速到深度推理，按需选择最合适的模型。按量计费，比订阅更划算。"
+    }
+  },
+  "useCases": {
+    "title": "省下来的时间，够你多喝两杯咖啡",
+    "subtitle": "这些事情，以前要花几个小时。现在一句话搞定。",
+    "fileManagement": {
+      "title": "文件整理",
+      "desc": "自动整理下载文件夹，按类型分类、重命名文件、标记重复项，让混乱的文件井然有序。",
+      "timeBefore": "2-3小时",
+      "timeAfter": "5分钟"
+    },
+    "receiptProcessing": {
+      "title": "收据管理",
+      "desc": "识别收据照片中的日期、商家、金额，自动生成报销表格，月度报销轻松搞定。",
+      "timeBefore": "半天",
+      "timeAfter": "10分钟"
+    },
+    "dataAnalysis": {
+      "title": "数据清洗",
+      "desc": "清洗销售数据，删除重复记录、填充缺失值、标准化格式，生成分析报告。",
+      "timeBefore": "2天",
+      "timeAfter": "30分钟"
+    },
+    "meetingNotes": {
+      "title": "会议记录",
+      "desc": "从多个会议记录中提取行动项，按负责人分类，生成周度摘要，不遗漏任何重要信息。",
+      "timeBefore": "2小时",
+      "timeAfter": "15分钟"
+    }
+  },
+  "steps": {
+    "title": "30 秒上手",
+    "step1": {
+      "number": "01",
+      "title": "下载安装",
+      "desc": "下载安装包，双击打开，搞定。"
+    },
+    "step2": {
+      "number": "02",
+      "title": "说出需求",
+      "desc": "用自然语言告诉它你要做什么，不需要学任何命令。"
+    },
+    "step3": {
+      "number": "03",
+      "title": "坐等结果",
+      "desc": "Cherry Agent 会自动选择最合适的模型和技能，帮你把事情做完。"
+    }
+  },
+  "testimonials": {
+    "title": "用户怎么说",
+    "subtitle": "真实用户的使用感受",
+    "freelancer": {
+      "avatar": "李",
+      "name": "李明",
+      "role": "自由职业者",
+      "quote": "我的下载文件夹终于不是一坨了。以前找个文件要翻半天，现在一句话就整理好了，真的爽。"
+    },
+    "projectManager": {
+      "avatar": "王",
+      "name": "王芳",
+      "role": "项目经理",
+      "quote": "周报从 2 小时变成 20 分钟。团队的人不用再问我'那个文档在哪'了，省了好多沟通成本。"
+    },
+    "student": {
+      "avatar": "张",
+      "name": "张伟",
+      "role": "大学生",
+      "quote": "期末复习的时候用它整理了一学期的笔记，生成的大纲比我自己整理的清楚多了。"
+    },
+    "salesPerson": {
+      "avatar": "刘",
+      "name": "刘强",
+      "role": "销售人员",
+      "quote": "每月报销从半天变成 10 分钟，收据拍个照就搞定了。早知道有这个工具就好了。"
+    },
+    "contentCreator": {
+      "avatar": "陈",
+      "name": "陈静",
+      "role": "内容创作者",
+      "quote": "整理资料的时间从 3 小时降到半小时，剩下的时间可以专心写东西了。效率提升太明显了。"
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "items": [
+      {
+        "q": "跟 ChatGPT / Claude 官方客户端有什么区别？",
+        "a": "最大的区别是 Cherry Agent 能直接操作你电脑上的文件和数据，而不只是聊天。它有技能扩展系统，可以像装 App 一样给 AI 添加新能力。而且数据全部存在本地，不上传云端。"
+      },
+      {
+        "q": "为什么价格能做到比官方便宜？",
+        "a": "我们采用按量计费模式，你用多少付多少，不需要每月固定订阅，所以能把成本降下来。"
+      },
+      {
+        "q": "Cherry Agent 是免费的吗？",
+        "a": "Cherry Agent 采用按量付费模式，注册即送体验额度，用完后按实际使用量计费。"
+      },
+      {
+        "q": "支持哪些 AI 模型？",
+        "a": "支持 Claude 全系列：Claude Haiku 4.5（速度最快、最省费用）、Claude Sonnet 4.6（综合能力最强）、Claude Opus 4.6（最强推理）。系统根据任务复杂度自动推荐，你也可以手动选择。"
+      },
+      {
+        "q": "我的数据安全吗？",
+        "a": "所有对话数据存储在你的本地设备上，我们不会上传或存储你的任何对话内容。你的数据完全由你掌控。"
+      },
+      {
+        "q": "如何获取技术支持？",
+        "a": "你可以通过应用内反馈功能提交问题，或加入我们的社区获取帮助。我们会尽快响应每一个反馈。"
+      },
+      {
+        "q": "如何联系客服？",
+        "a": "微信: JsnonoChat\n邮箱: 1073634403@qq.com"
+      },
+      {
+        "q": "如何管理 AI 的权限策略？",
+        "a": "Cherry Agent 默认采用最小权限策略，文件读写、命令执行等敏感操作均需你在界面上确认。你也可以在设置中配置自动批准权限，让 AI 更高效地完成批量任务，完全由你掌控。"
+      }
+    ]
+  },
+  "providers": {
+    "title": "由 Claude 全系列驱动",
+    "subtitle": "Anthropic 出品，从轻量到深度推理，覆盖所有工作场景",
+    "claude": {
+      "title": "Claude 全系列",
+      "desc": "Anthropic 出品的顶尖 AI，擅长复杂推理、代码生成和精细任务执行",
+      "features": ["深度推理与长链分析", "复杂代码生成与审查", "精细权限控制，每步可确认"]
+    },
+    "routing": {
+      "title": "智能模型路由",
+      "desc": "根据任务复杂度自动推荐最优模型——简单任务用 Haiku 节省成本，复杂任务自动切换 Sonnet 或 Opus，完全由你掌控。"
+    },
+    "capabilities": {
+      "smartModel": {
+        "title": "智能模型选择",
+        "desc": "根据任务复杂度自动推荐最优模型——简单任务用 Haiku 节省成本，复杂任务自动切换 Sonnet 或 Opus，完全由你掌控。"
+      },
+      "skillSystem": {
+        "title": "技能扩展系统",
+        "desc": "通过技能插件无限扩展 AI 能力——PDF 处理、网页搜索、代码生成、文档编写，一键安装即用。"
+      },
+      "crossPlatform": {
+        "title": "全平台安全",
+        "desc": "支持 macOS 和 Windows，数据本地存储，对话记录不上传云端，你的隐私完全属于你。"
+      }
+    }
+  },
+  "security": {
+    "title": "透明可控，值得信赖",
+    "subtitle": "从权限到数据，每一步都在你的掌控之中",
+    "permissions": {
+      "title": "权限透明",
+      "desc": "默认最小权限策略，文件读写、命令执行等敏感操作均需你确认。你清楚 AI 在做什么，也能随时叫停。"
+    },
+    "enterprise": {
+      "title": "企业可控",
+      "desc": "管理后台可统一配置权限策略、模型白名单和使用额度，满足团队合规需求。"
+    },
+    "data": {
+      "title": "数据安全",
+      "desc": "对话和文件全部存储在本地设备，不经过第三方服务器。API 通信全程加密，密钥由你自己管理。"
+    }
+  },
+  "bottomCta": {
+    "title": "每天还在手动做这些事？",
+    "description": "下载 Cherry Agent，让 AI 帮你把时间省出来。",
+    "downloadBtn": "立即下载，免费体验"
+  },
+  "antivirusHint": "安装或使用时若遇到拦截，请暂时关闭 360、火绒等杀毒软件",
+  "antivirusModal": {
+    "title": "温馨提示",
+    "confirm": "知道了，前往下载",
+    "installHint": "若安装时弹出系统安全提示，请按如下步骤操作"
+  },
+  "a11y": {
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "selectLanguage": "选择语言",
+    "languageOptions": "语言选项",
+    "switchToDarkMode": "切换到深色模式",
+    "switchToLightMode": "切换到浅色模式"
+  },
+  "footer": {
+    "copyright": "© {{year}} Cherry Agent",
+    "product": "产品",
+    "contact": "联系我们",
+    "company": {
+      "operatedBy": "由英国公司 CHERRYCHAT LTD 运营",
+      "numberLabel": "公司编号: {{number}}"
+    },
+    "contactInfo": {
+      "wechat": "微信",
+      "email": "邮箱"
+    },
+    "links": {
+      "features": "特性",
+      "download": "下载"
+    }
+  },
+  "register": {
+    "sideTitle": "30 秒后，你就有了一个 AI 员工",
+    "sideSubtitle": "注册即送体验额度，不需要绑定信用卡",
+    "features": {
+      "memory": { "title": "注册即送 ¥3 体验额度", "desc": "够你完整体验文件整理、数据处理等核心功能" },
+      "privacy": { "title": "不需要信用卡", "desc": "零门槛开始，用完再决定要不要充值" },
+      "skills": { "title": "30 秒完成注册", "desc": "填个邮箱设个密码，马上开始用" },
+      "price": { "title": "数据完全在你手里", "desc": "所有文件和对话都存在本地，我们看不到" }
+    },
+    "socialProof": "今天已有 128 人注册",
+    "testimonial": {
+      "quote": "本来只是试试，结果第一天就用它整理了 200 多个文件。现在每天都在用。",
+      "author": "刘强，销售经理"
+    },
+    "formTitle": "免费开始",
+    "formSubtitle": "注册后立即获得体验额度",
+    "fields": {
+      "email": "邮箱",
+      "password": "密码",
+      "confirmPassword": "确认密码",
+      "nickname": "昵称",
+      "nicknameOptional": "昵称（选填）",
+      "referralCode": "邀请码",
+      "referralCodeOptional": "邀请码（选填）"
+    },
+    "placeholders": {
+      "email": "your@email.com",
+      "password": "至少 8 位，含大小写字母和数字",
+      "confirmPassword": "再次输入密码",
+      "nickname": "你希望怎么称呼你",
+      "referralCode": "输入好友邀请码"
+    },
+    "passwordStrength": {
+      "label": "密码强度：",
+      "weak": "弱",
+      "medium": "中",
+      "strong": "强"
+    },
+    "referralBanner": {
+      "title": "🎁 好友邀请你加入",
+      "desc": "注册即享 ¥{{amount}} 专属奖励"
+    },
+    "backToHome": "了解更多",
+    "submitBtn": "立即注册",
+    "submitting": "注册中...",
+    "hasAccount": "已有账号？请在",
+    "desktopClient": "桌面客户端",
+    "loginSuffix": "中登录",
+    "validation": {
+      "emailRequired": "请输入邮箱",
+      "emailInvalid": "邮箱格式不正确",
+      "passwordMin": "密码至少 8 个字符",
+      "passwordUppercase": "密码需要包含大写字母",
+      "passwordLowercase": "密码需要包含小写字母",
+      "passwordNumber": "密码需要包含数字",
+      "passwordMismatch": "两次输入的密码不一致"
+    },
+    "errors": {
+      "registerFailed": "注册失败，请稍后重试",
+      "networkError": "网络错误，请检查网络连接后重试"
+    },
+    "success": {
+      "title": "注册成功！",
+      "reward": "恭喜！您已获得 ¥{{amount}} 新用户奖励",
+      "description": "下载桌面客户端，开始让 AI 帮你干活",
+      "downloadWithVersion": "下载 {{platform}} v{{version}}",
+      "downloadPlatform": "下载 {{platform}} 版",
+      "otherPlatforms": "其他平台：",
+      "backHome": "返回首页",
+      "verifyEmailTitle": "验证您的邮箱",
+      "verifyEmailDesc": "我们已向 {{email}} 发送了验证邮件，请点击邮件中的链接完成验证后即可登录使用。",
+      "verifyEmailHint": "如未收到，请检查垃圾邮件文件夹"
+    },
+    "providerInterest": {
+      "title": "你更感兴趣的功能是？",
+      "claudeDesc": "深度推理",
+      "codexDesc": "文件处理",
+      "both": "都想用",
+      "bothDesc": "全功能体验"
+    }
+  },
+  "userGuide": {
+    "sectionLabel": "入门指南",
+    "title": "使用指南",
+    "subtitle": "5 分钟从新手到熟手，每一步都有截图说明",
+    "nextStep": "下一步",
+    "chapters": {
+      "what": {
+        "label": "第一章",
+        "num": "01",
+        "title": "Cherry Agent 是什么？",
+        "subtitle": "AI 帮你做事，不只是聊天",
+        "steps": {
+          "s1": {
+            "title": "不只是聊天，是真的在干活",
+            "description": "普通 AI（比如 ChatGPT）只能给你答案，你还是得自己动手。Cherry Agent 不一样——它能直接操作你的电脑，整理文件、搜索网页、生成表格，你说任务它来执行，全程可以看到它在做什么。"
+          },
+          "s2": {
+            "title": "6 大能力，覆盖日常工作",
+            "description": "文件管理、数据处理、内容创作、学习研究、工作协作、个人生活。打开 App 就能看到 40 个预置任务，点一下就能用，不需要任何学习成本。"
+          }
+        }
+      },
+      "firstTask": {
+        "label": "第二章",
+        "num": "02",
+        "title": "发送你的第一个任务",
+        "subtitle": "5 步完成，3 分钟上手",
+        "steps": {
+          "s1": {
+            "title": "认识主界面",
+            "description": "打开 Cherry Agent，左侧是历史会话列表，中间是任务分类（文件管理、数据处理、内容创作等），你可以直接点击预置任务快速开始，也可以在底部输入框输入任何指令。"
+          },
+          "s2": {
+            "title": "点击「新建任务」",
+            "description": "点击左上角的「+ 新建任务」按钮，弹出会话配置窗口。在这里你需要完成两项设置：工作目录和 AI 模型。"
+          },
+          "s3": {
+            "title": "选择工作目录（重要）",
+            "description": "Agent 会在这个目录里操作文件，它只能读写这个文件夹里的内容，不会碰其他地方的文件。\n\n建议把需要处理的文件都放在同一个文件夹里，再选这个文件夹作为工作目录。比如要整理照片，就选照片所在的文件夹；要处理 Excel，就选表格所在的文件夹。",
+            "tip": "工作目录就像 Agent 的「工作台」——它只能操作这个范围内的文件，你其他地方的文件完全安全，不用担心被误操作。"
+          },
+          "s4": {
+            "title": "选择 AI 模型",
+            "description": "日常任务选 Claude Haiku 4.5（速度最快，积分消耗最少）；复杂分析或写作选 Claude Sonnet 4.6（能力更强）；超复杂任务选 Claude Opus 4.6。\n\n不确定选哪个？保持默认就行，系统会自动推荐适合的模型。"
+          },
+          "s5": {
+            "title": "描述任务，发送",
+            "description": "在底部输入框用中文说出你要做什么，越具体越好。点击发送后，你能看到 Agent 的「思考过程」——它在分析任务、调用工具、一步步执行。全程透明，随时可以暂停或干预。"
+          }
+        }
+      },
+      "settings": {
+        "label": "第三章",
+        "num": "03",
+        "title": "个性化设置",
+        "subtitle": "让 Agent 更了解你",
+        "steps": {
+          "s1": {
+            "title": "记忆：让 AI 记住你",
+            "description": "在「设置 → 记忆」中，把常用信息写进去，比如你的名字、职业、工作习惯、项目背景。Agent 每次对话都会自动参考这些信息，不用每次重新解释。\n\n比如写入「我是建筑师，常用 AutoCAD」，以后 Agent 回答相关问题时会自动结合你的背景。"
+          },
+          "s2": {
+            "title": "技能：开启/关闭功能",
+            "description": "「设置 → 技能」里有 17 个内置技能，包括网页浏览、代码生成、头脑风暴、数据分析等，可以按需开启或关闭。\n\n你也可以安装自定义技能，就像给手机装 App 一样扩展 Agent 的能力边界。"
+          },
+          "s3": {
+            "title": "外观：深色/浅色随你选",
+            "description": "「设置 → 外观」可以切换界面主题（浅色/深色/跟随系统），以及切换显示语言（中文简体、繁体中文、English、日本語）。"
+          },
+          "s4": {
+            "title": "同步：多设备无缝切换",
+            "description": "开启「设置 → 同步」后，会话记录、记忆数据、技能配置会自动备份到云端，每 5 分钟同步一次。\n\n换新电脑或重装系统后，登录账号就能完整恢复所有数据，不丢失任何内容。"
+          }
+        }
+      },
+      "billing": {
+        "label": "第四章",
+        "num": "04",
+        "title": "积分与充值",
+        "subtitle": "按量计费，用多少付多少",
+        "steps": {
+          "s1": {
+            "title": "积分是什么？",
+            "description": "积分是 Cherry Agent 的使用货币。1 积分 = 0.1 元人民币。每次对话消耗积分，消耗多少取决于使用的模型和对话长度。\n\n• Claude Haiku 4.5：最省积分，适合日常任务\n• Claude Sonnet 4.6：中等消耗，综合能力最强\n• Claude Opus 4.6：消耗最多，适合超复杂任务"
+          },
+          "s2": {
+            "title": "每日签到，免费领积分",
+            "description": "每天打开 App 可以免费签到领积分，连续签到还有额外奖励。这是最简单的免费获取积分方式，养成每天签到的习惯就行。"
+          },
+          "s3": {
+            "title": "月卡套餐怎么选？",
+            "description": "三种月卡，按使用强度选：\n\n• Agent Plus 月卡 ¥300：每日 175 积分，适合轻度使用（每天约 1-2 个小任务）\n• Agent Pro 月卡 ¥788：每日 525 积分，适合日常工作（每天处理多个任务）\n• Agent Max 月卡 ¥1399：每日 1400 积分，适合高强度使用\n\n套餐额度每日 0 点重置，可叠加购买。"
+          },
+          "s4": {
+            "title": "按量充值积分",
+            "description": "不想订月卡？可以直接按量充值积分，50 元起充，1000 元对应 10000 积分。\n\n支持微信支付、支付宝、Visa/MasterCard 等国际信用卡，付款后积分立即到账。"
+          }
+        }
+      },
+      "referral": {
+        "label": "第五章",
+        "num": "05",
+        "title": "邀请好友得佣金",
+        "subtitle": "分享给朋友，每次充值都有返利",
+        "steps": {
+          "s1": {
+            "title": "找到你的专属邀请码",
+            "description": "进入「设置 → 推荐」，你会看到专属邀请码（如 E52WYT）和邀请链接。把链接分享给朋友，或者让朋友注册时输入你的邀请码，即可建立推荐关系。"
+          },
+          "s2": {
+            "title": "好友充值，你得佣金",
+            "description": "好友每次充值，你都会获得相应比例的佣金奖励，记录在「佣金记录」Tab 中。佣金经审核通过后，可以申请提现到支付宝账号。\n\n如有提现问题，联系客服微信：JsnonoChat。"
+          }
+        }
+      },
+      "shortcuts": {
+        "label": "快捷键",
+        "num": "06",
+        "title": "快捷键速查",
+        "subtitle": "掌握这些，效率翻倍"
+      }
+    },
+    "shortcutGroups": {
+      "navigation": {
+        "title": "页面导航",
+        "items": {
+          "chat": "聊天页",
+          "skills": "技能市场",
+          "memory": "记忆管理",
+          "usage": "使用量",
+          "settings": "设置"
+        }
+      },
+      "session": {
+        "title": "会话管理",
+        "items": {
+          "new": "新建会话",
+          "prev": "上一个会话",
+          "next": "下一个会话",
+          "close": "关闭 / 删除会话"
+        }
+      },
+      "input": {
+        "title": "输入",
+        "items": {
+          "send": "发送消息",
+          "newline": "换行",
+          "paste": "粘贴图片"
+        }
+      }
+    }
+  }
+}

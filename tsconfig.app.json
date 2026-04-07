@@ -1,0 +1,54 @@
+{
+    "compilerOptions": {
+        "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+        "target": "ES2020",
+        "useDefineForClassFields": true,
+        "lib": [
+            "ES2020",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "module": "ESNext",
+        "skipLibCheck": true,
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedSideEffectImports": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ],
+            "@specs/*": [
+                "../specs/*"
+            ],
+            "@version-a/*": [
+                "../specs/001-saas-monetization/designs/version-a-neo-tech/*"
+            ],
+            "@version-b/*": [
+                "../specs/001-saas-monetization/designs/version-b-warm-craft/*"
+            ],
+            "@version-c/*": [
+                "../specs/001-saas-monetization/designs/version-c-dev-studio/*"
+            ]
+        }
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "src/electron",
+        "src/**/__tests__/**",
+        "src/**/*.test.ts",
+        "src/**/*.test.tsx",
+        "src/**/*.e2e.ts",
+        "src/**/*.e2e.tsx"
+    ]
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Node.js JIT 编译支持 -->
+    <key>com.apple.security.cs.allow-jit</key>
+    <true/>
+
+    <!-- 某些 Node 模块需要的无符号可执行内存 -->
+    <key>com.apple.security.cs.allow-unsigned-executable-memory</key>
+    <true/>
+
+    <!-- API 调用和自动更新需要的网络客户端权限 -->
+    <key>com.apple.security.network.client</key>
+    <true/>
+
+    <!-- 本地开发服务器需要的网络服务器权限 -->
+    <key>com.apple.security.network.server</key>
+    <true/>
+
+    <!-- 文件读写权限 -->
+    <key>com.apple.security.files.user-selected.read-write</key>
+    <true/>
+
+    <!-- 摄像头访问权限 -->
+    <key>com.apple.security.device.camera</key>
+    <true/>
+
+    <!-- 麦克风访问权限 -->
+    <key>com.apple.security.device.audio-input</key>
+    <true/>
+</dict>
+</plist>

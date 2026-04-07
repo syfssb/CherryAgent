@@ -1,0 +1,498 @@
+{
+  "nav": {
+    "features": "Features",
+    "steps": "How It Works",
+    "faq": "FAQ",
+    "download": "Download",
+    "register": "Register"
+  },
+  "hero": {
+    "title": "Stop chatting with AI. ",
+    "titleHighlight": "Make it work for you",
+    "description": "Cherry Agent is a desktop AI Agent. Give it one command, and it organizes files, processes data, generates reports — not conversation, real action.",
+    "downloadBtn": "Try Free",
+    "version": "v{{version}}",
+    "typewriterScenes": [
+      "Organize my Downloads folder by file type",
+      "Extract amounts from these 50 receipts into a spreadsheet",
+      "Analyze this sales data and find the fastest-growing category"
+    ]
+  },
+  "marquee": {
+    "title": "Supports leading AI models"
+  },
+  "showcase": {
+    "title": "Clean yet powerful interface",
+    "description": "A thoughtfully designed conversation UI that keeps you focused on interacting with AI",
+    "screenshot1Alt": "Cherry Agent desktop interface screenshot 1",
+    "screenshot2Alt": "Cherry Agent desktop interface screenshot 2"
+  },
+  "painPoints": {
+    "title": "Sound familiar?",
+    "item1": {
+      "title": "Chat with AI for 30 minutes, still do it yourself",
+      "desc": "Regular AI chatbots only give suggestions — they don't actually do the work. You spend 10 minutes explaining what you need, get a wall of text, then copy-paste and do everything manually."
+    },
+    "item2": {
+      "title": "Subscribed to 3 AI tools, paying $60+/month",
+      "desc": "ChatGPT Plus, Claude Pro, various plugins... each does a little, but none can truly handle everything. Money spent, efficiency barely improved."
+    },
+    "item3": {
+      "title": "Want AI to process local files, but afraid to upload",
+      "desc": "Company docs, financial data, personal photos... you know AI could help, but uploading files to the cloud just doesn't feel right."
+    }
+  },
+  "whatItIs": {
+    "line1": "Not a chatbot.",
+    "line2": "An AI employee living on your computer.",
+    "description": "Cherry Agent runs on your desktop, directly handling local files, processing data, and generating documents. Say what you need — it gets it done. No copy-pasting, no switching between windows."
+  },
+  "features": {
+    "title": "Why Cherry Agent",
+    "memory": {
+      "title": "Gets smarter over time",
+      "desc": "Automatically remembers your work habits, project context, and preferences. No need to re-explain — it already knows what you want."
+    },
+    "privacy": {
+      "title": "Your data stays on your machine",
+      "desc": "All conversations and files are stored locally, never uploaded to the cloud. Your data, your eyes only."
+    },
+    "skills": {
+      "title": "Install skills, do anything",
+      "desc": "Built-in skills for document processing, code review, data analysis, and more. Add your own too — like installing apps for your AI."
+    },
+    "extensible": {
+      "title": "Choose your model freely",
+      "desc": "Support the full Claude lineup (Haiku, Sonnet, Opus). Choose from lightweight-fast to deep-reasoning. Pay-as-you-go, more cost-effective than subscriptions."
+    }
+  },
+  "useCases": {
+    "title": "Time saved? Enough for two extra coffees",
+    "subtitle": "These tasks used to take hours. Now, one sentence.",
+    "fileManagement": {
+      "title": "File Organization",
+      "desc": "Auto-sort your Downloads folder by type, rename files, flag duplicates — chaos to order in seconds.",
+      "timeBefore": "2-3 hours",
+      "timeAfter": "5 min"
+    },
+    "receiptProcessing": {
+      "title": "Receipt Processing",
+      "desc": "Extract dates, merchants, and amounts from receipt photos. Auto-generate expense reports. Monthly reimbursement, done.",
+      "timeBefore": "Half day",
+      "timeAfter": "10 min"
+    },
+    "dataAnalysis": {
+      "title": "Data Cleaning",
+      "desc": "Clean sales data — remove duplicates, fill missing values, standardize formats, generate analysis reports.",
+      "timeBefore": "2 days",
+      "timeAfter": "30 min"
+    },
+    "meetingNotes": {
+      "title": "Meeting Notes",
+      "desc": "Extract action items from multiple meeting notes, categorize by owner, generate weekly summaries. Nothing falls through the cracks.",
+      "timeBefore": "2 hours",
+      "timeAfter": "15 min"
+    }
+  },
+  "steps": {
+    "title": "Up and running in 30 seconds",
+    "step1": {
+      "number": "01",
+      "title": "Download & Install",
+      "desc": "Download the installer, double-click, done."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Tell it what you need",
+      "desc": "Use natural language — no commands to learn, no syntax to remember."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Sit back and watch",
+      "desc": "Cherry Agent picks the best model and skills automatically, and gets the job done for you."
+    }
+  },
+  "testimonials": {
+    "title": "What users say",
+    "subtitle": "Real feedback from real users",
+    "freelancer": {
+      "avatar": "L",
+      "name": "Li Ming",
+      "role": "Freelancer",
+      "quote": "My Downloads folder is finally not a mess. Used to spend ages finding files — now one command and it's all sorted. Love it."
+    },
+    "projectManager": {
+      "avatar": "W",
+      "name": "Wang Fang",
+      "role": "Project Manager",
+      "quote": "Weekly reports went from 2 hours to 20 minutes. Team stopped asking me 'where's that doc?' — saved so much back-and-forth."
+    },
+    "student": {
+      "avatar": "Z",
+      "name": "Zhang Wei",
+      "role": "College Student",
+      "quote": "Used it to organize a whole semester of notes before finals. The outline it generated was clearer than anything I could've done myself."
+    },
+    "salesPerson": {
+      "avatar": "L",
+      "name": "Liu Qiang",
+      "role": "Sales Rep",
+      "quote": "Monthly expense reports went from half a day to 10 minutes. Just snap photos of receipts and it's done. Wish I had this sooner."
+    },
+    "contentCreator": {
+      "avatar": "C",
+      "name": "Chen Jing",
+      "role": "Content Creator",
+      "quote": "Research and organizing went from 3 hours to 30 minutes. More time for actual writing. The efficiency boost is real."
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "q": "How is this different from ChatGPT / Claude official apps?",
+        "a": "The biggest difference is Cherry Agent can directly work with files and data on your computer — not just chat. It has a skill extension system where you can add new capabilities like installing apps. Plus, all data stays local."
+      },
+      {
+        "q": "How can you offer lower prices than official subscriptions?",
+        "a": "We use pay-as-you-go pricing — you only pay for what you use, no monthly subscription required."
+      },
+      {
+        "q": "Is Cherry Agent free?",
+        "a": "Cherry Agent uses pay-as-you-go pricing. You get free credits on signup, then pay based on actual usage."
+      },
+      {
+        "q": "Which AI models are supported?",
+        "a": "Supports the full Claude lineup: Claude Haiku 4.5 (fastest, most cost-efficient), Claude Sonnet 4.6 (strongest overall), Claude Opus 4.6 (deepest reasoning). The system auto-recommends based on task complexity, and you can also choose manually."
+      },
+      {
+        "q": "Is my data safe?",
+        "a": "All conversation data is stored on your local device. We never upload or store any of your conversations. Your data is entirely under your control."
+      },
+      {
+        "q": "How do I get support?",
+        "a": "You can submit issues through the in-app feedback feature or join our community for help. We respond to every piece of feedback as quickly as possible."
+      },
+      {
+        "q": "How do I contact support?",
+        "a": "WeChat: JsnonoChat\nEmail: 1073634403@qq.com"
+      },
+      {
+        "q": "How do I manage AI permission policies?",
+        "a": "Cherry Agent uses a least-privilege policy by default — sensitive operations like file access and command execution require your confirmation in the UI. You can also configure auto-approval in settings to let AI handle batch tasks more efficiently. You stay fully in control."
+      }
+    ]
+  },
+  "providers": {
+    "title": "Powered by the Full Claude Lineup",
+    "subtitle": "From Anthropic — lightweight to deep reasoning, covering every workflow",
+    "claude": {
+      "title": "Full Claude Lineup",
+      "desc": "Anthropic's top-tier AI, excelling at complex reasoning, code generation, and precise task execution",
+      "features": ["Deep reasoning and long-chain analysis", "Complex code generation and review", "Granular permission control with step-by-step confirmation"]
+    },
+    "routing": {
+      "title": "Smart Model Routing",
+      "desc": "Automatically recommends the best model for each task — Haiku for speed and economy, Sonnet or Opus for complex work. Fully in your control."
+    },
+    "capabilities": {
+      "smartModel": {
+        "title": "Smart Model Selection",
+        "desc": "Automatically recommends the best model based on task complexity — uses Haiku for simple tasks to save costs, switches to Sonnet or Opus for complex tasks, fully under your control."
+      },
+      "skillSystem": {
+        "title": "Skill Extension System",
+        "desc": "Infinitely extend AI capabilities through skill plugins — PDF processing, web search, code generation, document writing, install and use with one click."
+      },
+      "crossPlatform": {
+        "title": "Cross-Platform & Secure",
+        "desc": "Supports macOS and Windows, data stored locally, conversations never uploaded to the cloud, your privacy belongs to you."
+      }
+    }
+  },
+  "security": {
+    "title": "Transparent, controllable, trustworthy",
+    "subtitle": "From permissions to data, every step is under your control",
+    "permissions": {
+      "title": "Permission Transparency",
+      "desc": "Least-privilege by default. Sensitive operations like file access and command execution require your confirmation. You always know what AI is doing and can stop it anytime."
+    },
+    "enterprise": {
+      "title": "Enterprise Control",
+      "desc": "Admin panel for centralized permission policies, model whitelists, and usage quotas to meet team compliance requirements."
+    },
+    "data": {
+      "title": "Data Security",
+      "desc": "Conversations and files are stored entirely on your local device, never passing through third-party servers. API communication is fully encrypted, and keys are managed by you."
+    }
+  },
+  "bottomCta": {
+    "title": "Still doing these tasks manually?",
+    "description": "Download Cherry Agent and let AI save you hours every day.",
+    "downloadBtn": "Download Now — It's Free"
+  },
+  "antivirusHint": "If blocked during install or use, temporarily disable 360, Huorong, or other antivirus software",
+  "antivirusModal": {
+    "title": "Important Notice",
+    "confirm": "Got it, Download Now",
+    "installHint": "If a security warning appears during install, follow these steps"
+  },
+  "a11y": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "selectLanguage": "Select language",
+    "languageOptions": "Language options",
+    "switchToDarkMode": "Switch to dark mode",
+    "switchToLightMode": "Switch to light mode"
+  },
+  "footer": {
+    "copyright": "© {{year}} Cherry Agent",
+    "product": "Product",
+    "contact": "Contact Us",
+    "company": {
+      "operatedBy": "Operated by UK Company CHERRYCHAT LTD",
+      "numberLabel": "Company Number: {{number}}"
+    },
+    "contactInfo": {
+      "wechat": "WeChat",
+      "email": "Email"
+    },
+    "links": {
+      "features": "Features",
+      "download": "Download"
+    }
+  },
+  "register": {
+    "sideTitle": "In 30 seconds, you'll have an AI employee",
+    "sideSubtitle": "Free credits on signup. No credit card required.",
+    "features": {
+      "memory": { "title": "Free $3 credits on signup", "desc": "Enough to fully try file organization, data processing, and more" },
+      "privacy": { "title": "No credit card needed", "desc": "Zero commitment. Try it first, pay later if you want" },
+      "skills": { "title": "30-second signup", "desc": "Just an email and password. Start using it right away" },
+      "price": { "title": "Your data stays yours", "desc": "All files and conversations stored locally. We can't see them" }
+    },
+    "socialProof": "128 people signed up today",
+    "testimonial": {
+      "quote": "I signed up just to try it. Ended up organizing 200+ files on day one. Now I use it every day.",
+      "author": "Alex Chen, Sales Manager"
+    },
+    "formTitle": "Start free",
+    "formSubtitle": "Get free credits the moment you sign up",
+    "fields": {
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "nickname": "Nickname",
+      "nicknameOptional": "Nickname (optional)",
+      "referralCode": "Referral code",
+      "referralCodeOptional": "Referral code (optional)"
+    },
+    "placeholders": {
+      "email": "your@email.com",
+      "password": "Min 8 chars, with upper/lowercase and numbers",
+      "confirmPassword": "Enter your password again",
+      "nickname": "What should we call you",
+      "referralCode": "Enter a friend's referral code"
+    },
+    "passwordStrength": {
+      "label": "Password strength: ",
+      "weak": "Weak",
+      "medium": "Medium",
+      "strong": "Strong"
+    },
+    "referralBanner": {
+      "title": "🎁 A friend invited you to join",
+      "desc": "Sign up and get a ${{amount}} bonus"
+    },
+    "backToHome": "Learn more",
+    "submitBtn": "Sign up",
+    "submitting": "Signing up...",
+    "hasAccount": "Already have an account? Log in via the",
+    "desktopClient": "desktop client",
+    "loginSuffix": "",
+    "validation": {
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email format",
+      "passwordMin": "Password must be at least 8 characters",
+      "passwordUppercase": "Password must contain an uppercase letter",
+      "passwordLowercase": "Password must contain a lowercase letter",
+      "passwordNumber": "Password must contain a number",
+      "passwordMismatch": "Passwords do not match"
+    },
+    "errors": {
+      "registerFailed": "Registration failed. Please try again later.",
+      "networkError": "Network error. Please check your connection and try again."
+    },
+    "success": {
+      "title": "You're all set!",
+      "reward": "Congrats! You've received a ${{amount}} new user bonus",
+      "description": "Download the desktop client and let AI start working for you",
+      "downloadWithVersion": "Download {{platform}} v{{version}}",
+      "downloadPlatform": "Download for {{platform}}",
+      "otherPlatforms": "Other platforms:",
+      "backHome": "Back to home",
+      "verifyEmailTitle": "Verify your email",
+      "verifyEmailDesc": "We've sent a verification email to {{email}}. Please click the link in the email to complete verification before logging in.",
+      "verifyEmailHint": "If you don't see it, check your spam folder"
+    },
+    "providerInterest": {
+      "title": "Which feature interests you most?",
+      "claudeDesc": "Deep reasoning",
+      "codexDesc": "File processing",
+      "both": "Both",
+      "bothDesc": "Full experience"
+    }
+  },
+  "userGuide": {
+    "sectionLabel": "Getting Started",
+    "title": "User Guide",
+    "subtitle": "From beginner to proficient in 5 minutes, with screenshots for every step",
+    "nextStep": "Next step",
+    "chapters": {
+      "what": {
+        "label": "Chapter 1",
+        "num": "01",
+        "title": "What is Cherry Agent?",
+        "subtitle": "AI that works for you, not just chats",
+        "steps": {
+          "s1": {
+            "title": "It actually does things, not just talks",
+            "description": "Ordinary AI (like ChatGPT) only gives you answers — you still have to do the work yourself. Cherry Agent is different: it can directly operate your computer, organize files, search the web, and generate spreadsheets. You describe the task, it executes it, and you can watch every step in real time."
+          },
+          "s2": {
+            "title": "6 capabilities covering everyday work",
+            "description": "File management, data processing, content creation, research, work collaboration, and personal productivity. Open the app and find 40 ready-to-use tasks — click to start immediately with zero learning curve."
+          }
+        }
+      },
+      "firstTask": {
+        "label": "Chapter 2",
+        "num": "02",
+        "title": "Send Your First Task",
+        "subtitle": "5 steps, up and running in 3 minutes",
+        "steps": {
+          "s1": {
+            "title": "Get to know the interface",
+            "description": "Open Cherry Agent. On the left is your conversation history; in the center are task categories (File Management, Data Processing, Content Creation, etc.). Click any preset task to start instantly, or type any instruction in the input box at the bottom."
+          },
+          "s2": {
+            "title": "Click \"New Task\"",
+            "description": "Click the \"+ New Task\" button in the top-left corner. A session setup window will appear where you need to configure two things: the working directory and the AI model."
+          },
+          "s3": {
+            "title": "Choose a working directory (important)",
+            "description": "The Agent operates only within this directory — it can only read and write files inside this folder and won't touch anything outside.\n\nTip: Move the files you want to process into a single folder, then select that folder as the working directory. For example, select your photos folder when organizing photos, or your spreadsheets folder when working with Excel files.",
+            "tip": "Think of the working directory as the Agent's \"workbench\" — it can only operate within this boundary, so all your other files are completely safe from accidental changes."
+          },
+          "s4": {
+            "title": "Choose an AI model",
+            "description": "For everyday tasks, choose Claude Haiku 4.5 (fastest, lowest credit usage). For complex analysis or writing, choose Claude Sonnet 4.6 (more powerful). For highly complex tasks, choose Claude Opus 4.6.\n\nNot sure which to pick? Keep the default — the system will automatically recommend the best model for your task."
+          },
+          "s5": {
+            "title": "Describe your task and send",
+            "description": "Type what you want done in the input box — the more specific, the better. After sending, you can watch the Agent's \"thinking process\": it analyzes the task, calls tools, and executes step by step. The entire process is transparent, and you can pause or intervene at any time."
+          }
+        }
+      },
+      "settings": {
+        "label": "Chapter 3",
+        "num": "03",
+        "title": "Personalization",
+        "subtitle": "Help the Agent understand you better",
+        "steps": {
+          "s1": {
+            "title": "Memory: let the AI remember you",
+            "description": "In Settings → Memory, write down frequently used information such as your name, profession, work habits, and project context. The Agent will automatically reference this information in every conversation, so you never have to re-explain.\n\nFor example, add \"I'm an architect who uses AutoCAD\" and the Agent will automatically factor in your background when answering related questions."
+          },
+          "s2": {
+            "title": "Skills: enable or disable features",
+            "description": "Settings → Skills contains 17 built-in skills including web browsing, code generation, brainstorming, and data analysis — enable or disable them as needed.\n\nYou can also install custom skills to extend the Agent's capabilities, just like installing apps on your phone."
+          },
+          "s3": {
+            "title": "Appearance: light or dark mode",
+            "description": "Settings → Appearance lets you switch the interface theme (Light / Dark / System) and the display language (Simplified Chinese, Traditional Chinese, English, Japanese)."
+          },
+          "s4": {
+            "title": "Sync: seamless across devices",
+            "description": "Enable Settings → Sync to automatically back up your conversation history, memory data, and skill configurations to the cloud every 5 minutes.\n\nWhen you get a new computer or reinstall the system, simply log in to your account to fully restore all your data — nothing is lost."
+          }
+        }
+      },
+      "billing": {
+        "label": "Chapter 4",
+        "num": "04",
+        "title": "Credits & Recharge",
+        "subtitle": "Pay only for what you use",
+        "steps": {
+          "s1": {
+            "title": "What are credits?",
+            "description": "Credits are Cherry Agent's usage currency. 1 credit = ¥0.1 RMB. Each conversation consumes credits — the amount depends on the model used and the length of the conversation.\n\n• Claude Haiku 4.5: fewest credits, best for everyday tasks\n• Claude Sonnet 4.6: moderate usage, strongest overall performance\n• Claude Opus 4.6: most credits, best for highly complex tasks"
+          },
+          "s2": {
+            "title": "Daily check-in: get free credits",
+            "description": "Open the app every day to check in and earn free credits. Consecutive check-ins earn bonus rewards. This is the simplest way to accumulate credits for free — just make it a daily habit."
+          },
+          "s3": {
+            "title": "Which monthly plan to choose?",
+            "description": "Three monthly plans based on usage intensity:\n\n• Agent Plus ¥300/mo: 175 credits/day — for light use (1–2 small tasks per day)\n• Agent Pro ¥788/mo: 525 credits/day — for daily work (multiple tasks per day)\n• Agent Max ¥1,399/mo: 1,400 credits/day — for heavy use\n\nDaily credits reset at midnight. Plans can be stacked."
+          },
+          "s4": {
+            "title": "Top up credits as needed",
+            "description": "Don't want a monthly plan? Top up credits directly starting from ¥50, with ¥1,000 = 10,000 credits.\n\nSupports WeChat Pay, Alipay, and international credit cards (Visa, MasterCard). Credits are added to your account instantly after payment."
+          }
+        }
+      },
+      "referral": {
+        "label": "Chapter 5",
+        "num": "05",
+        "title": "Refer Friends & Earn",
+        "subtitle": "Share with friends and earn commission on every recharge",
+        "steps": {
+          "s1": {
+            "title": "Find your referral code",
+            "description": "Go to Settings → Referral to find your unique referral code (e.g., E52WYT) and referral link. Share the link with friends, or have them enter your code when registering — this establishes the referral relationship."
+          },
+          "s2": {
+            "title": "Friends recharge, you earn commission",
+            "description": "Every time a referred friend recharges, you earn a commission proportional to their payment. Records appear in the Commission tab. After approval, you can withdraw to your Alipay account.\n\nFor withdrawal issues, contact customer support on WeChat: JsnonoChat."
+          }
+        }
+      },
+      "shortcuts": {
+        "label": "Shortcuts",
+        "num": "06",
+        "title": "Keyboard Shortcuts",
+        "subtitle": "Master these to double your efficiency"
+      }
+    },
+    "shortcutGroups": {
+      "navigation": {
+        "title": "Page Navigation",
+        "items": {
+          "chat": "Chat",
+          "skills": "Skill Market",
+          "memory": "Memory",
+          "usage": "Usage",
+          "settings": "Settings"
+        }
+      },
+      "session": {
+        "title": "Session Management",
+        "items": {
+          "new": "New Session",
+          "prev": "Previous Session",
+          "next": "Next Session",
+          "close": "Close / Delete Session"
+        }
+      },
+      "input": {
+        "title": "Input",
+        "items": {
+          "send": "Send Message",
+          "newline": "New Line",
+          "paste": "Paste Image"
+        }
+      }
+    }
+  }
+}
