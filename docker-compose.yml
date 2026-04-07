@@ -1,0 +1,86 @@
+# ============================================================
+# Cherry Agent — Docker Compose 一键部署
+#
+# 首次启动前准备：
+#   1. cp api-server/.env.example api-server/.env
+#   2. 编辑 api-server/.env，填入必填项：
+#      - JWT_SECRET（openssl rand -hex 32）
+#      - API_KEY_ENCRYPTION_KEY（openssl rand -hex 32）
+#      - 至少一个 AI 密钥（ANTHROPIC_API_KEY 等）
+#
+# 启动：docker compose up -d
+# 首次数据库迁移：docker compose exec api npm run db:migrate
+# ============================================================
+
+services:
+  # ============================================================
+  # PostgreSQL 数据库
+  # ============================================================
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: cherry_agent
+      POSTGRES_USER: cherry
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme_in_production}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cherry -d cherry_agent"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    networks:
+      - cherry_net
+
+  # ============================================================
+  # API 后端服务
+  # 首次启动后需手动执行数据库迁移：
+  #   docker compose exec api npm run db:migrate
+  # ============================================================
+  api:
+    build:
+      context: ./api-server
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file:
+      - ./api-server/.env
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgresql://cherry:${POSTGRES_PASSWORD:-changeme_in_production}@postgres:5432/cherry_agent
+      JWT_SECRET: ${JWT_SECRET:?JWT_SECRET is required - run: openssl rand -hex 32}
+      API_KEY_ENCRYPTION_KEY: ${API_KEY_ENCRYPTION_KEY:?API_KEY_ENCRYPTION_KEY is required - must be exactly 64 hex chars}
+    ports:
+      - "${API_PORT:-3000}:3000"
+    networks:
+      - cherry_net
+
+  # ============================================================
+  # 落地页 / 官网（可选）
+  # 如果不需要，可以注释掉这个服务
+  # ============================================================
+  landing:
+    build:
+      context: ./landing-web
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      API_UPSTREAM: http://api:3000
+    ports:
+      - "${LANDING_PORT:-8080}:8080"
+    depends_on:
+      - api
+    networks:
+      - cherry_net
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  cherry_net:
+    driver: bridge

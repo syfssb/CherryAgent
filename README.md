@@ -1,187 +1,174 @@
 <div align="center">
 
+<img src="docs/assets/banner.png" alt="Cherry Agent Banner" width="100%" />
+
 # Cherry Agent
 
-**A native desktop AI assistant powered by Claude**
+**让 AI 成为你真正的桌面助手**
 
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey.svg)](https://github.com/DevAgentForge/cherry-agent/releases)
-[![Electron](https://img.shields.io/badge/Electron-36.x-47848f.svg)](https://www.electronjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178c6.svg)](https://www.typescriptlang.org/)
+[English](./README_en.md) | **简体中文**
 
-[English](#) · [贡献指南](CONTRIBUTING.md) · [问题反馈](https://github.com/DevAgentForge/cherry-agent/issues)
+[![license](https://img.shields.io/github/license/syfssb/CherryAgent)](LICENSE)
+[![stars](https://img.shields.io/github/stars/syfssb/CherryAgent)](https://github.com/syfssb/CherryAgent/stargazers)
+[![forks](https://img.shields.io/github/forks/syfssb/CherryAgent)](https://github.com/syfssb/CherryAgent/fork)
+[![issues](https://img.shields.io/github/issues/syfssb/CherryAgent)](https://github.com/syfssb/CherryAgent/issues)
 
 </div>
 
 ---
 
-## What is Cherry Agent?
+Cherry Agent 是一款**开源 AI 桌面客户端**，把 Claude Code 的强大能力搬到了图形界面里。
 
-Cherry Agent is an open-source desktop application that wraps the [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-typescript) in a native GUI. It gives Claude Code users a visual interface for managing multi-turn AI sessions, inspecting tool calls, and rendering AI-generated interactive charts — without ever leaving the desktop.
+Claude Code 只有命令行，不直观；直接调 API 又没有工具调用能力。Cherry Agent 解决这个问题——给你一个真正能**读文件、写代码、搜网页、画流程图**的桌面 AI，而不是聊天框。
 
-> Claude Code is powerful but terminal-only.
-> Cherry Agent brings it to the desktop.
-
-**Key capabilities:**
-
-- Multi-session management with persistent chat history (SQLite)
-- Real-time tool call visualization (Bash, file ops, web search, etc.)
-- Generative UI widgets: AI can render SVG diagrams, ECharts charts, and HTML calculators inline in chat
-- Cross-platform: macOS (arm64/x64), Windows, Linux
-- Reuses your existing `~/.claude/settings.json` and Claude Code authentication
+> 已有 `claude login`？打开 Cherry Agent 就能用，不需要任何额外配置。
 
 ---
 
-## Screenshots
+## ✨ 功能特性
 
-> Screenshots coming soon.
+- 🤖 **双 AI 引擎**：同一界面自由切换 Claude（Anthropic）和 Codex（OpenAI），用最合适的 AI 做每件事
+- 🔍 **看见 AI 在做什么**：AI 执行命令、读写文件、搜索网页时，每一步都实时展示，不再是黑盒
+- 🎨 **AI 直接画图表**：让 AI 在对话里画流程图、数据图表、架构图，可点击可交互，不用切换工具
+- 🧩 **Skills 技能系统**：内置浏览器自动化、前端设计、Office 文档处理等十余个技能，也能自己写插件扩展
+- 📁 **文件管理器**：在对话中直接浏览和操作本地文件，不用反复切换窗口
+- 🔄 **静默自动更新**：后台下载新版本，准备好了提示你，不打断工作节奏
+- 💬 **多会话，历史不丢**：所有对话存在本地，重启不丢，随时翻看
+- 🖥️ **Mac + Windows 双平台**：Apple Silicon / Intel / Windows 全支持，开箱即用
 
 ---
 
-## Quick Start
+## 截图
 
-### Option 1: Download a Release
+> 截图即将上线，欢迎 Star 关注更新
 
-Go to [Releases](https://github.com/DevAgentForge/cherry-agent/releases) and download the installer for your platform.
+---
 
-**Requirements:**
-- A valid Anthropic API key (configure via Claude Code: `claude login`)
-- macOS 12+, Windows 10+, or a modern Linux desktop
+## 🚀 快速开始
 
-### Option 2: Build from Source
+### 桌面客户端（推荐）
 
-**Prerequisites:**
-- [Bun](https://bun.sh/) 1.x or Node.js 22+
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed and authenticated (`claude login`)
-- macOS: Xcode Command Line Tools (`xcode-select --install`)
-- Windows: Git for Windows (provides bash)
+前往 [Releases](https://github.com/syfssb/CherryAgent/releases) 下载安装包，安装后直接用。
+
+| 平台 | 安装包 |
+|------|--------|
+| macOS Apple Silicon | `Cherry-Agent-x.x.x-arm64.dmg` |
+| macOS Intel | `Cherry-Agent-x.x.x.dmg` |
+| Windows | `Cherry-Agent-Setup-x.x.x.exe` |
+
+**前提：** 已安装 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 并完成 `claude login`。
+
+---
+
+### 后端服务 Docker 一键部署
+
+> 用于自托管认证后端和落地页，桌面客户端无需 Docker。
 
 ```bash
-# Clone
-git clone https://github.com/DevAgentForge/cherry-agent.git
-cd cherry-agent
+# 1. 克隆仓库
+git clone https://github.com/syfssb/CherryAgent.git
+cd CherryAgent
 
-# Install dependencies
+# 2. 配置环境变量
+cp api-server/.env.example api-server/.env
+# 编辑 api-server/.env，至少填写 JWT_SECRET
+
+# 3. 启动服务
+docker compose up -d
+
+# 4. 初始化数据库（首次启动执行一次）
+docker compose exec api npm run db:migrate
+```
+
+启动后各服务地址：
+
+| 服务 | 地址 | 说明 |
+|------|------|------|
+| API 后端 | `http://localhost:3000` | 认证、计费、API 代理 |
+| 落地页 | `http://localhost:8080` | 官网/下载页（可选，不需要可在 docker-compose.yml 中注释掉） |
+| PostgreSQL | 内部 | 仅容器内访问，不对外暴露 |
+
+---
+
+<details>
+<summary>📦 手动部署（从源码构建）</summary>
+
+**环境要求：**
+
+| 工具 | 版本 | 说明 |
+|------|------|------|
+| [Bun](https://bun.sh/) | 1.x+ | 推荐包管理器 |
+| Node.js | 22+ | Bun 不可用时备选 |
+| [Claude Code](https://docs.anthropic.com/en/docs/claude-code) | 最新版 | AI 运行时，需 `claude login` |
+
+- **macOS：** 需要 Xcode Command Line Tools（`xcode-select --install`）
+- **Windows：** 需要 Git for Windows（提供 Claude Code 所需的 bash 环境）
+
+```bash
+git clone https://github.com/syfssb/CherryAgent.git
+cd CherryAgent
 bun install
-
-# Configure environment
-cp .env.example .env
-# Edit .env — set AUTH_API_URL if using a self-hosted auth backend
-# For local-only use, the default values work out of the box
-
-# Run in development mode
-bun run dev
+bun run rebuild   # 重建 native 模块
+bun run dev       # 启动开发模式
 ```
 
----
-
-## Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| Desktop shell | Electron 36 |
-| Frontend | React 19 + Vite 7 + Tailwind CSS 4 |
-| Backend (main process) | TypeScript + better-sqlite3 |
-| AI runtime | [@anthropic-ai/claude-agent-sdk](https://github.com/anthropics/claude-agent-sdk-typescript) |
-| Codex runtime | [@openai/codex-sdk](https://github.com/openai/codex) |
-| Package manager | Bun (recommended) / pnpm |
-| Testing | Vitest + Playwright |
-
----
-
-## Project Structure
-
-```
-cherry-agent/
-├── src/
-│   ├── electron/          # Main process (IPC, auto-updater, session management)
-│   │   ├── ipc/           # IPC handler registry
-│   │   ├── libs/          # Core libraries (runner, auto-updater, process spawner)
-│   │   └── main.ts        # Electron entry point
-│   └── ui/                # Renderer process (React)
-│       ├── components/    # UI components
-│       ├── lib/           # Frontend utilities (widget system, etc.)
-│       └── pages/         # Route pages
-├── api-server/            # Optional auth/billing backend (Express + PostgreSQL)
-├── landing-web/           # Marketing/download page (nginx + Docker)
-├── packages/              # Internal monorepo packages
-│   ├── core/              # Shared business logic
-│   ├── shared/            # Shared types and utilities
-│   └── electron-adapter/  # Electron-specific adapters
-├── scripts/               # Build, pack, and release scripts
-├── resources/             # Native binaries (vendored, platform-specific)
-├── skills/                # Claude Agent SDK skill plugins
-└── tests/                 # E2E and integration tests
-```
-
-Each directory contains a `codemap.md` with detailed architecture notes. Start there before modifying code.
-
----
-
-## Development
+**构建安装包：**
 
 ```bash
-# Start dev server (hot reload)
-bun run dev
-
-# Type check
-bun run build
-
-# Run unit tests
-bun run test:unit
-
-# Run all tests
-bun run test:all
-
-# Lint
-bun run lint
+bun run dist:mac-arm64   # macOS Apple Silicon
+bun run dist:mac-x64     # macOS Intel
+bun run dist:win         # Windows（可在 macOS 交叉编译）
+bun run dist:linux       # Linux
 ```
 
-### Building Platform Installers
-
-```bash
-# macOS Apple Silicon
-bun run dist:mac-arm64
-
-# macOS Intel
-bun run dist:mac-x64
-
-# Windows (cross-compile from macOS)
-bun run dist:win
-
-# Linux
-bun run dist:linux
-```
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for environment setup and PR workflow. See [`DEVELOPMENT.md`](DEVELOPMENT.md) for architecture decisions and deep technical notes.
+</details>
 
 ---
 
-## Generative UI Widgets
+## ⚙️ 环境变量说明
 
-Cherry Agent includes a widget system that lets Claude render interactive visualizations directly in chat. The AI outputs a `show-widget` code fence; the frontend renders it in a sandboxed iframe with no network access.
+### 桌面客户端（`.env`）
 
-Supported widget types:
-- SVG flowcharts, architecture diagrams, timelines
-- ECharts interactive charts (line, bar, pie, radar, sankey, heatmap, etc.)
-- HTML interactive calculators with sliders and inputs
+| 变量 | 必填 | 说明 |
+|------|------|------|
+| `AUTH_API_URL` | 否 | 自托管认证后端地址，不填则纯本地运行 |
+| `VITE_UPDATE_FEED_URL` | 否 | 自动更新 feed 地址，仅分发构建时需要 |
+
+纯本地使用无需任何配置，开箱即用。
+
+### 后端服务（`api-server/.env`）
+
+| 变量 | 必填 | 说明 |
+|------|------|------|
+| `DATABASE_URL` | 是 | PostgreSQL 连接字符串 |
+| `JWT_SECRET` | 是 | JWT 签名密钥，生产环境请用随机字符串 |
+| `POSTGRES_PASSWORD` | 否 | Docker 数据库密码（默认 `changeme_in_production`，**生产必改**） |
+| `API_PORT` | 否 | API 服务端口（默认 `3000`） |
+| `LANDING_PORT` | 否 | 落地页端口（默认 `8080`） |
+| `LANDING_URL` | 否 | 落地页公网地址，用于生成邀请链接 |
+| `HTTPS_PROXY` | 否 | 国内网络访问 Google OAuth 时设置代理 |
 
 ---
 
-## Auto-Update
+## 🌟 Star History
 
-The app uses `electron-updater` for silent background updates. On startup, it checks a update feed URL for new versions, downloads them in the background, and notifies the user when ready to install.
+<div align="center">
 
-Configure the update feed URL via the `VITE_UPDATE_FEED_URL` environment variable. See `.env.example` for details.
+[![Star History Chart](https://api.star-history.com/svg?repos=syfssb/CherryAgent&type=Date)](https://star-history.com/#syfssb/CherryAgent&Date)
 
----
-
-## Contributing
-
-Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a pull request.
+</div>
 
 ---
 
-## License
+## 🤝 贡献指南
+
+欢迎提交 Issue 和 Pull Request！
+
+- [CONTRIBUTING.md](CONTRIBUTING.md) — 环境搭建与 PR 流程
+- [DEVELOPMENT.md](DEVELOPMENT.md) — 架构设计与技术细节
+
+---
+
+## 📜 License
 
 [Apache-2.0](LICENSE)
